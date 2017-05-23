@@ -1,0 +1,31 @@
+Appendix:
+Citation for Social-Ecological Variables: 
+1. Schootman M, Jeffe D, Gillanders W, Aft R. Racial disparities in the development of breast cancer metastases among older women. Cancer. 2009;115(4):731-740. 
+2. Schootman M, Jeffe D, Lian M, Gillanders W, Aft R. The Role of Poverty Rate and Racial Distribution in the Geographic Clustering of Breast Cancer Survival Among Older Women: A Geographic and Multilevel Analysis. American Journal of Epidemiology. 2008;169(5):554-561.
+3. Xiao H, Tan F, Adunlin G, Ali A, Goovaerts P, Gwede C et al. Factors Associated with Overall Survival Prostate Cancer in Florida: A Multilevel Analysis. Journal of Health Care for the Poor and Underserved. 2015;26(1):266-277.
+4. Beckmann K, Bennett A, Young G, Cole S, Joshi R, Adams J et al. Sociodemographic disparities in survival from colorectal cancer in South Australia: a population-wide data linkage study. BMC Health Services Research. 2015;16(1).
+5. Plascak J, Fisher J, Paskett E. Primary Care Physician Supply, Insurance Type, and Late-Stage Cancer Diagnosis. 2017.
+6. Donker G, Wiersma E, van der Hoek L, Heins M. Determinants of general practitioner's cancer-related gut feelings—a prospective cohort study. 2017.
+7. O’Malley C, Shema S, Clarke L, Clarke C, Perkins C. Medicaid Status and Stage at Diagnosis of Cervical Cancer. American Journal of Public Health. 2006;96(12):2179-2185.
+8. DEJARDIN O, BOUVIER A, FAIVRE J, BOUTREUX S, DE POUVOURVILLE G, LAUNOY G. Access to care, socioeconomic deprivation and colon cancer survival. Alimentary Pharmacology & Therapeutics. 2008;27(10):940-949.
+9. McLafferty S, Wang F. Rural reversal?. Cancer. 2009;115(12):2755-2764.
+10. Mobley L, Kuo T. Demographic Disparities in Late-Stage Diagnosis of Breast and Colorectal Cancers Across the USA. Journal of Racial and Ethnic Health Disparities. 2016;4(2):201-212.
+11. Johnson A, Hines R, Johnson J, Bayakly A. Treatment and survival disparities in lung cancer: The effect of social environment and place of residence. 2017.
+12. Liang Z, Xie B, Li J, Wang X, Wang S, Meng S et al. Hypertension and risk of prostate cancer: a systematic review and meta-analysis. Scientific Reports. 2016;6(1).
+13. Rodriguez C, Freedland S, Deka A, Jacobs E, McCullough M, Patel A et al. Body Mass Index, Weight Change, and Risk of Prostate Cancer in the Cancer Prevention Study II Nutrition Cohort. Cancer Epidemiology Biomarkers & Prevention. 2007;16(1):63-69.
+14. Kamineni A, Anderson M, White E, Taplin S, Porter P, Ballard-Barbash R et al. Body mass index, tumor characteristics, and prognosis following diagnosis of early-stage breast cancer in a mammographically screened population. Cancer Causes & Control. 2012;24(2):305-312.
+15. Barkin J. Body Size and Composition and Colon Cancer Risk in Men. Yearbook of Medicine. 2006;2006:417-419. 
+16. Cui Y, Whiteman M, Flaws J, Langenberg P, Tkaczuk K, Bush T. Body mass and stage of breast cancer at diagnosis. International Journal of Cancer. 2002;98(2):279-283.
+17. Johnson A, Hines R, Johnson J, Bayakly A. Treatment and survival disparities in lung cancer: The effect of social environment and place of residence. 2017.
+18. Zhan F, Lin Y. Racial/Ethnic, Socioeconomic, and Geographic Disparities of Cervical Cancer Advanced-Stage Diagnosis in Texas. 2017
+19. Clegg L, Reichman M, Miller B, Hankey B, Singh G, Lin Y et al. Impact of socioeconomic status on cancer incidence and stage at diagnosis: selected findings from the surveillance, epidemiology, and end results: National Longitudinal Mortality Study. Cancer Causes & Control. 2008;20(4):417-435.
+20. Markossian T, Hines R. Disparities in Late Stage Diagnosis, Treatment, and Breast Cancer-Related Death by Race, Age, and Rural Residence Among Women in Georgia. 2017.
+21. Schootman M, Walker M, Jeffe D, Rohrer J, Baker E. Breast Cancer Screening and Incidence in Communities With a High Proportion of Uninsured. American Journal of Preventive Medicine. 2007;33(5):379-386.e2.
+22. Dasgupta P, Baade P, Aitken J, Turrell G. Multilevel determinants of breast cancer survival: association with geographic remoteness and area-level socioeconomic disadvantage. Breast Cancer Research and Treatment. 2011;132(2):701-710.
+23. Baade P, Dasgupta P, Aitken J, Turrell G. Geographic remoteness and risk of advanced colorectal cancer at diagnosis in Queensland: a multilevel study. British Journal of Cancer. 2011;105(7):1039-1041.
+24. Coker A, DeSimone C, Eggleston K, White A, Williams M. Ethnic Disparities in Cervical Cancer Survival Among Texas Women. Journal of Women's Health. 2009;18(10):1577-1583.
+25. Xiao H, Tan F, Goovaerts P, Ali A, Adunlin G, Gwede C et al. Multilevel Factors Associated With Overall Mortality for Men Diagnosed With Prostate Cancer in Florida. American Journal of Men's Health. 2014;8(4):316-326.
+26. Xiao H, Tan F, Goovaerts P, Adunlin G, Ali A, Gwede C et al. Impact of Comorbidities on Prostate Cancer Stage at Diagnosis in Florida. American Journal of Men's Health. 2016;10(4):285-295.
+27. Lannin D. Influence of Socioeconomic and Cultural Factors on Racial Differences in Late-Stage Presentation of Breast Cancer. JAMA. 1998;279(22):1801.
+28. Mobley L, Kuo T, Watson L, Gordon Brown G. Geographic disparities in late-stage cancer diagnosis: Multilevel factors and spatial interactions. Health & Place. 2012;18(5):978-990.
+29. Mandelblatt J, Andrews H, Kao R, Wallace R, Kerner J. The late-stage diagnosis of colorectal cancer: demographic and socioeconomic factors. American Journal of Public Health. 1996;86(12):1794-1797.
