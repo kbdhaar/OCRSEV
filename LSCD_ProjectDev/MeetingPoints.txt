@@ -1,8 +1,0 @@
-1. mappings - classes lined with fields in table through data properties
-race, ethnicity, patid, bmi, blood pressure, tobacco use
-2. How to map ‘age’? Is it using date at diagnosis? Or current date/death date?
-
-select datediff((select curdate()), (SELECT birth_date
-FROM demographic limit 1))/ 365.25 as age;
-3. Gender and sexual orientation (V 3.1) from oneflroida - create fake?
-4. BRFSS- fake data? look up table? Lat n long do not match? how to go about mapping?
