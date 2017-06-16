@@ -1,0 +1,64 @@
+[PrefixDeclaration]
+:		http://purl.obolibrary.org/obo/OCRSEV/
+dc:		http://purl.org/dc/elements/1.1/
+obo:		http://purl.obolibrary.org/obo/
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+cito:		http://purl.org/spar/cito/
+doid:		http://purl.obolibrary.org/obo/doid#
+foaf:		http://xmlns.com/foaf/0.1/
+obo1:		http://data.bioontology.org/metadata/obo/
+pato:		http://purl.obolibrary.org/obo/pato#
+purl:		http://purl.obolibrary.org#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+skos:		http://www.w3.org/2004/02/skos/core#
+ontoneo:		http://purl.obolibrary.org/obo/ontoneo/
+protege:		http://protege.stanford.edu/plugins/owl/protege#
+subsets:		http://purl.obolibrary.org/obo/ro/subsets#
+metadata:	http://data.bioontology.org/metadata/
+oboInOwl:	http://www.geneontology.org/formats/oboInOwl#
+apollo_sv:	http://purl.obolibrary.org/obo/apollo_sv.owl/
+
+[SourceDeclaration]
+sourceUri	datasource1
+connectionUrl	jdbc:mysql://localhost:3306/oneflorida
+username	root
+password	270815
+driverClass	com.mysql.jdbc.Driver
+
+[MappingDeclaration] @collection [[
+mappingId	NotHispanic
+target		<{pat}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000554 :PCORnet_00000017 . 
+source		select distinct patid as pat, hispanic from demographic where hispanic = "N"
+
+mappingId	Hispanic
+target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000554 :PCORnet_00000016 . 
+source		select distinct patid, hispanic from demographic where hispanic = "Y"
+
+mappingId	AmericanIndian
+target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000555 :PCORnet_00000006 . 
+source		select distinct patid, race from demographic where race = 01
+
+mappingId	Asian
+target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000555 :PCORnet_00000007 . 
+source		select distinct patid, race from demographic where race = 02
+
+mappingId	AfricanAmerican
+target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000555 :PCORnet_00000009 . 
+source		select distinct patid, race from demographic where race = 03
+
+mappingId	NativeHawaiian
+target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000555 :PCORnet_00000013 . 
+source		select distinct patid, race from demographic where race = 04
+
+mappingId	White
+target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000555 :PCORnet_00000014 . 
+source		select distinct patid, race from demographic where race = 05
+
+mappingId	MultipleRace
+target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000555 :PCORnet_00000015 . 
+source		select distinct patid, race from demographic where race = 06
+]]
+
