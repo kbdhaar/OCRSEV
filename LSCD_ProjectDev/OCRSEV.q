@@ -93,3 +93,39 @@ PREFIX pato: <http://purl.obolibrary.org/obo/pato#>
 PREFIX pcor: <http://purl.obolibrary.org/obo/PCORnet/>
 PREFIX apollo_sv: <http://purl.obolibrary.org/obo/apollo_sv.owl/>
 select * where {?patid :OCRSEV_00000576 ?birthdate}
+
+[QueryItem="patid-zip-lat-long"]
+PREFIX : <http://purl.obolibrary.org/obo/OCRSEV/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX pato: <http://purl.obolibrary.org/obo/pato#>	
+PREFIX pcor: <http://purl.obolibrary.org/obo/PCORnet/>
+PREFIX apollo_sv: <http://purl.obolibrary.org/obo/apollo_sv.owl/>
+select * where {?patid :OCRSEV_00000587 ?zipcode. ?zipcode :OCRSEV_00000585 ?lat. ?zipcode :OCRSEV_00000586 ?long}
+
+[QueryItem="patid-zipcode-currentsmokerprevalence"]
+PREFIX : <http://purl.obolibrary.org/obo/OCRSEV/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX pato: <http://purl.obolibrary.org/obo/pato#>	
+PREFIX pcor: <http://purl.obolibrary.org/obo/PCORnet/>
+PREFIX apollo_sv: <http://purl.obolibrary.org/obo/apollo_sv.owl/>
+select  ?patid ?zipcode ?currentsmoker  where {?patid :OCRSEV_00000587 ?zipcode. ?zipcode :OCRSEV_00000585 ?lat. ?zipcode :OCRSEV_00000586 ?long. ?zipcode :OCRSEV_00000590 ?geolocation. ?geolocation :OCRSEV_00000591 ?currentsmoker}
+
+[QueryItem="patid-zipcode-nonsmokerprevalence"]
+PREFIX : <http://purl.obolibrary.org/obo/OCRSEV/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX pato: <http://purl.obolibrary.org/obo/pato#>	
+PREFIX pcor: <http://purl.obolibrary.org/obo/PCORnet/>
+PREFIX apollo_sv: <http://purl.obolibrary.org/obo/apollo_sv.owl/>
+select  ?patid ?zipcode ?currentsmoker  where {?patid :OCRSEV_00000587 ?zipcode. ?zipcode :OCRSEV_00000585 ?lat. ?zipcode :OCRSEV_00000586 ?long. ?zipcode :OCRSEV_00000590 ?geolocation. ?geolocation :OCRSEV_00000592 ?currentsmoker}

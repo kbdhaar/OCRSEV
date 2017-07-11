@@ -145,12 +145,45 @@ mappingId	urn:multiplerace-type
 target		<{race}> a obo:PCORnet/PCORnet_00000015 . 
 source		select distinct race from demographic where race = 06
 
-mappingId	patid-birthdate
+mappingId	urn:patid-birthdate
 target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000576 {birth_date} . 
 source		select patid, birth_date from demographic
 
 mappingId	urn:birthdate-type
 target		<{birth_date}> a obo:BFO_0000038 . 
 source		select patid, birth_date from demographic
+
+mappingId	urn:zip-lat-long
+target		obo:GENEPIO_0001890-{zipcode} a obo:GENEPIO_0001890 ; :OCRSEV_00000585 obo:OBI_0001620-{Lat} ; :OCRSEV_00000586 obo:OBI_0001621-{Long} ; :OCRSEV_00000590 :{Geolocation} . 
+source		select * from geo_mapping
+
+mappingId	urn:zip-type
+target		obo:GENEPIO_0001890-{zipcode} a obo:GENEPIO_0001890 . 
+source		select  patid, zipcode from demographic
+
+mappingId	urn:lat-type
+target		obo:OBI_0001620-{Lat} a obo:OBI_0001620 . 
+source		select Lat from geo_mapping
+
+mappingId	urn:long-type
+target		obo:OBI_0001621-{Long} a obo:OBI_0001621 . 
+source		select * from geo_mapping
+
+mappingId	urn:patid-zip
+target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000587 obo:GENEPIO_0001890-{zipcode} . 
+source		select patid, zipcode from demographic
+
+mappingId	urn:Geolocation-lat-long-currentsmoker
+target		:{Geolocation} :OCRSEV_00000591 {Data_value} . 
+source		select Topic, Response, Geolocation, Lat, brfss_fl.Long, Data_value from brfss_fl where 
+			Topic= 'Current Smoker Status' and
+			Response = 'Yes'
+			
+
+mappingId	urn:Geolocation-nonsmokerstatus
+target		:{Geolocation} :OCRSEV_00000592 {Data_value} . 
+source		select Topic, Response, Geolocation, Lat, brfss_fl.Long, Data_value from brfss_fl where 
+			brfss_fl.Topic= 'Current Smoker Status' and
+			Response = 'No'
 ]]
 

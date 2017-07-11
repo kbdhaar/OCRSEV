@@ -227,6 +227,62 @@ Description: An ontology developed for social-ecological variables that are resp
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000585 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000585">
+        <rdfs:label xml:lang="en">has latitude coordinate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000586 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000586">
+        <rdfs:label xml:lang="en">has longitude coordinate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000587 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000587">
+        <rdfs:label xml:lang="en">is located in the area with zipcode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000588 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000588">
+        <rdfs:label xml:lang="en">is located in</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000590 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000590">
+        <rdfs:label xml:lang="en">has location coordinates</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000591 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000591">
+        <rdfs:label xml:lang="en">has current smoker status prevalence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000592 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000592">
+        <rdfs:label xml:lang="en">has current non-smoker status prevalence</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -553,6 +609,12 @@ Description: An ontology developed for social-ecological variables that are resp
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000767"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000577"/>
             </owl:Restriction>
@@ -693,6 +755,12 @@ Description: An ontology developed for social-ecological variables that are resp
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001620">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000787"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -701,6 +769,12 @@ Description: An ontology developed for social-ecological variables that are resp
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001621">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000787"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -1408,7 +1482,7 @@ source: https://www.cdc.gov/bloodpressure/measure.htm</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000532"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A multilevel model for understading dynamic interrelations among various personal and environmental variables by categorizing the variables into five levels namely individual, interpersonal, organizational, community and policy.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A multilevel model that is used for understanding dynamic interrelations among various personal and environmental variables by categorizing the variables into five levels namely individual, interpersonal, organizational, community and policy.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">1. CDC - Social Ecological Model - CRCCP [Internet]. Cdc.gov. 2017 [cited 28 March 2017]. Available from: https://www.cdc.gov/cancer/crccp/sem.htm
 2. Social ecological model [Internet]. En.wikipedia.org. 2017 [cited 10 April 2017]. Available from: https://en.wikipedia.org/wiki/Social_ecological_model</obo:IAO_0000119>
@@ -1621,7 +1695,7 @@ Below 18.5	-Underweight
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000518"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An information content entity which is a component of social ecological model which includes various personal or environmental variables that influence individuals and are grouped together based on some common characteristic.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity which is a component of social ecological model which represents various personal or environmental variables that influence individuals and are grouped together based on some common characteristic.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Based on CDC - Social Ecological Model - CRCCP [Internet]. Cdc.gov. 2017 [cited 28 March 2017]. Available from: https://www.cdc.gov/cancer/crccp/sem.htm</obo:IAO_0000119>
         <rdfs:label xml:lang="en">social ecological model level</rdfs:label>
@@ -1657,7 +1731,7 @@ Below 18.5	-Underweight
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000535">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000532"/>
-        <obo:IAO_0000115 xml:lang="en">A social ecological model level which includes the social variables influencing an individual or a population, specifically containing variables related to the availability of health care, including the number of primary care physicians and health facilities available in the individual&apos;s area of residence.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A social ecological model level which represents the social variables influencing an individual or a population, specifically containing variables related to the availability of health care, including the number of primary care physicians and health facilities available in the individual&apos;s area of residence.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Based on CDC - Social Ecological Model - CRCCP [Internet]. Cdc.gov. 2017 [cited 28 March 2017]. Available from: https://www.cdc.gov/cancer/crccp/sem.htm</obo:IAO_0000119>
         <rdfs:label xml:lang="en">social ecological model organizational level</rdfs:label>
@@ -1917,7 +1991,7 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000075"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1931,6 +2005,60 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000578">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <rdfs:label xml:lang="en">postal delivery route</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000579 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000252"/>
+        <rdfs:label xml:lang="en">area smoking prevalence variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000580 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000580">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000579"/>
+        <rdfs:label xml:lang="en">BRFSS area smoking prevalence variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000581 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000581">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000580"/>
+        <rdfs:label xml:lang="en">BRFSS smoker status variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000582 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000582">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000580"/>
+        <rdfs:label xml:lang="en">BRFSS smokeless tobacco variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000583 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000581"/>
+        <rdfs:label xml:lang="en">BRFSS current smoker status variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000584 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000584">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000581"/>
+        <rdfs:label xml:lang="en">BRFSS current non-smoker status variable</rdfs:label>
     </owl:Class>
     
 
@@ -2408,7 +2536,7 @@ OT=Other</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000448"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
