@@ -605,7 +605,7 @@ Description: An ontology developed for social-ecological variables that are resp
 
     <!-- http://purl.obolibrary.org/obo/GENEPIO_0001890 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001890">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001890">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000767"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -619,7 +619,13 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GEO_000000787 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000787"/>
     
 
 
@@ -753,7 +759,7 @@ Description: An ontology developed for social-ecological variables that are resp
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001620 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001620">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001620">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000787"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -761,13 +767,13 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001621 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0001621">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001621">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000787"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -775,7 +781,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -942,9 +948,10 @@ Jamillah Z Khan</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000047 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
-    </rdf:Description>
+        <rdfs:label xml:lang="en">biological sex</rdfs:label>
+    </owl:Class>
     
 
 
@@ -972,15 +979,15 @@ Jamillah Z Khan</rdfs:comment>
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001894 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001894">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0001995 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001995">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -988,7 +995,7 @@ Jamillah Z Khan</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1920,6 +1927,12 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000252"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000533"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
@@ -1930,6 +1943,7 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A categorical variable which is about the biological sex quality which can take values male, female or ambiguous inhering in an organism.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">biological sex variable</rdfs:label>
     </owl:Class>
@@ -1952,35 +1966,9 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000540"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A biological sex variable that is present in PCORnet CDM database.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet biological sex variable</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000572 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000572">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000568"/>
-        <rdfs:label xml:lang="en">PCORnet ambiguous sex variable</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000573 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000573">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000568"/>
-        <rdfs:label xml:lang="en">PCORnet male sex variable</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000574 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000574">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000568"/>
-        <rdfs:label xml:lang="en">PCORnet female sex variable</rdfs:label>
     </owl:Class>
     
 
@@ -2013,6 +2001,14 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000579">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000252"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000536"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A categorical variable which assumes a prevalence value that represents the use or lack of use of any product made for human consumption from Nicotiana tabacum within a population.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">area smoking prevalence variable</rdfs:label>
     </owl:Class>
     
@@ -2022,7 +2018,14 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000580">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000579"/>
-        <rdfs:label xml:lang="en">BRFSS area smoking prevalence variable</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000598"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An area smoking prevalence variable that is present in BRFSS database.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">BRFSS area tobacco prevalence variable</rdfs:label>
     </owl:Class>
     
 
@@ -2031,7 +2034,7 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000581">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000580"/>
-        <rdfs:label xml:lang="en">BRFSS smoker status variable</rdfs:label>
+        <rdfs:label xml:lang="en">BRFSS area smoker status variable</rdfs:label>
     </owl:Class>
     
 
@@ -2040,7 +2043,7 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000582">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000580"/>
-        <rdfs:label xml:lang="en">BRFSS smokeless tobacco variable</rdfs:label>
+        <rdfs:label xml:lang="en">BRFSS area smokeless tobacco variable</rdfs:label>
     </owl:Class>
     
 
@@ -2049,7 +2052,7 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000583">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000581"/>
-        <rdfs:label xml:lang="en">BRFSS current smoker status variable</rdfs:label>
+        <rdfs:label xml:lang="en">BRFSS area current smoker status variable</rdfs:label>
     </owl:Class>
     
 
@@ -2058,7 +2061,19 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000584">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000581"/>
-        <rdfs:label xml:lang="en">BRFSS current non-smoker status variable</rdfs:label>
+        <rdfs:label xml:lang="en">BRFSS area current non-smoker status variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000598 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000598">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001716"/>
+        <obo:IAO_0000115 xml:lang="en">A database that includes state-wise telephone surveys of risk behaviors related to health from all 50 states.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">CDC -BRFSS [Internet]. Cdc.gov. 2017 [cited 9 July 2017]. https://www.cdc.gov/brfss/index.html.</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">Behavioral Risk Factor Surveillance System (BRFSS) database</rdfs:label>
     </owl:Class>
     
 
@@ -2531,7 +2546,7 @@ OT=Other</rdfs:comment>
 
     <!-- http://semanticscience.org/resource/SIO_000767 -->
 
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000767">
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000767">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2539,7 +2554,7 @@ OT=Other</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -2565,11 +2580,6 @@ OT=Other</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000088">
-        <rdfs:comment xml:lang="en">A time measurement datum which can assume integer values with a temporal unit of measure, that represents the amount of time that has elapsed since an organism&apos;s birth.
-
-[Dharani K Balasubramanian]</rdfs:comment>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000500">
         <rdfs:comment xml:lang="en">A socio-economic data which represents the state of an individual or a population being engaged or not engaged in an activity or service that either provides wages or salary.
 

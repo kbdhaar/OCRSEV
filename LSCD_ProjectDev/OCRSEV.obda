@@ -105,18 +105,6 @@ mappingId	urn:patid-type
 target		<{patid}> a obo:PCORnet/PCORnet_00000019 . 
 source		select distinct patid from demographic
 
-mappingId	urn:sexFemale-type
-target		<{sex}> a :OCRSEV_00000574 . 
-source		select distinct sex from demographic where sex = 'F'
-
-mappingId	urn:sexMale-type
-target		<{sex}> a :OCRSEV_00000573 . 
-source		select distinct sex from demographic where sex = 'M'
-
-mappingId	urn:sexAmbiguous-type
-target		<{sex}> a :OCRSEV_00000572 . 
-source		select distinct sex from demographic where sex = 'A'
-
 mappingId	urn:Hispanic-type
 target		<{hispanic}> a obo:PCORnet/PCORnet_00000016 . 
 source		select distinct hispanic from demographic where hispanic = 'Y'
@@ -173,17 +161,16 @@ mappingId	urn:patid-zip
 target		<{patid}> a obo:PCORnet/PCORnet_00000019 ; :OCRSEV_00000587 obo:GENEPIO_0001890-{zipcode} . 
 source		select patid, zipcode from demographic
 
-mappingId	urn:Geolocation-lat-long-currentsmoker
-target		:{Geolocation} :OCRSEV_00000591 {Data_value} . 
-source		select Topic, Response, Geolocation, Lat, brfss_fl.Long, Data_value from brfss_fl where 
-			Topic= 'Current Smoker Status' and
-			Response = 'Yes'
-			
-
 mappingId	urn:Geolocation-nonsmokerstatus
 target		:{Geolocation} :OCRSEV_00000592 {Data_value} . 
-source		select Topic, Response, Geolocation, Lat, brfss_fl.Long, Data_value from brfss_fl where 
+source		select Topic, Response, Geolocation, Lat, brfss_fl.Long, Data_value from brfss_fl where
 			brfss_fl.Topic= 'Current Smoker Status' and
 			Response = 'No'
+
+mappingId	urn:Geolocation-smokerstatus
+target		:{Geolocation} :OCRSEV_00000591 {Data_value} . 
+source		select Topic, Response, Geolocation, Lat, brfss_fl.Long, Data_value from brfss_fl where
+			brfss_fl.Topic= 'Current Smoker Status' and
+			Response = 'Yes'
 ]]
 

@@ -632,12 +632,6 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000416 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000416"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000572"/>
@@ -2759,15 +2753,6 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
         <rdfs:label xml:lang="en">employer role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000088 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
-        <rdfs:label xml:lang="en">age measurement datum</rdfs:label>
     </owl:Class>
     
 

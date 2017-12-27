@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/geo.owl" uri="geo11.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/TEMP" uri="PCORnetImport.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/PCORnet/" uri="file:/C:/Users/Dhar/Downloads/PCORowl-master/PCORowl-master/PCORnetCDM.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/DINTOimport" uri="DINTOimport.xml"/>
@@ -26,23 +27,31 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/trial.owl" uri="FMAimport.xml"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/vso.owl" uri="vso.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="duplicate:http://purl.obolibrary.org/obo/OCRSEV/" uri="AO_FinalVersion_MainOWL.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="duplicate:http://purl.obolibrary.org/obo/OCRSEV/" uri="LSCD_ProjectDev_V1.0.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/ONTONEOimport1" uri="ONTONEOimport.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/VSO" uri="vsoImport.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/bcgo.owl" uri="BCGOimport.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/cmo.owl" uri="CMOimport1.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/dinto_import1" uri="DINTOimport.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/doid.owl" uri="cancer.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/ero.owl" uri="EROimport.owl.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/genepio.owl" uri="genepio_input.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/obi.owl" uri="OBIimport.owl.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/obib.owl" uri="OBIBimport.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/omiabis.owl" uri="ombias.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="duplicate:http://purl.obolibrary.org/obo/omrse.owl" uri="newtrial.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="duplicate:http://purl.obolibrary.org/obo/omrse.owl" uri="omrse.owl.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/pato.owl" uri="PATOnew.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/ro.owl" uri="ROimport1.xml"/>
-        <uri id="Automatically generated entry, Timestamp=1497598823481" name="http://purl.obolibrary.org/obo/variableimport" uri="variableinput1.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/OCRSEV/" uri="AO_FinalVersion_MainOWL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/OCRSEV/" uri="OCRSEV.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/ONTONEOimport1" uri="ONTONEOimport.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/VSO" uri="vsoImport.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/bcgo.owl" uri="BCGOimport.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/cmo.owl" uri="CMOimport1.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/dinto_import1" uri="DINTOimport.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/doid.owl" uri="cancer.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/ero.owl" uri="EROimport.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/genepio.owl" uri="GenEpioImport.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/genepio.owl" uri="genepio_input.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/geo.owl" uri="GEOimport.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/geo.owl" uri="GEOimport1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/geo/geo.owl" uri="geo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/geo/geo.owl" uri="geo1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/geo/geo.owl" uri="geo11.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/iao.owl" uri="iao.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/iao/pno.owl" uri="PNOimport.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/obi.owl" uri="OBIimport.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/obib.owl" uri="OBIBimport.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/omiabis.owl" uri="ombias.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/omrse.owl" uri="omrse.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/pato.owl" uri="PATO1.owl.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="duplicate:http://purl.obolibrary.org/obo/pato.owl" uri="PATOnew.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/ro.owl" uri="ROimport1.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1514408290528" name="http://purl.obolibrary.org/obo/variableimport" uri="variableinput1.xml"/>
     </group>
 </catalog>
