@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.owl-ontologies.com/unnamed.owl#"
+  xml:base="http://www.owl-ontologies.com/unnamed.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="D06">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="D00_D09"/>
+    </rdfs:subClassOf>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Carcinoma in situ of cervix uteri</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#D00_D09">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#C51_C58"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#C00_D48"/>
+    </rdfs:subClassOf>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >In situ neoplasms</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#C00_D48">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Neoplasms</has_Description>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#R00_R99"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#A00_B99"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Z00_Z99"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#ICD10_Chapter"/>
+    <has_Italian_Label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></has_Italian_Label>
+  </owl:Class>
+  <owl:Class rdf:about="#B21">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#B20_B24"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#B20"/>
+    </owl:disjointWith>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Human immunodeficiency virus [HIV] disease resulting in malignant neoplasms</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#B20_B24">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Human immunodeficiency virus [HIV] disease</has_Description>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#A00_B99"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#B20">
+    <owl:disjointWith rdf:resource="#B21"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#B20_B24"/>
+    </rdfs:subClassOf>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Human immunodeficiency virus [HIV] disease resulting in infectious and parasitic diseases</has_Description>
+  </owl:Class>
+  <owl:Class rdf:ID="B95_B97">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#A00_B99"/>
+    </rdfs:subClassOf>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bacterial, viral and other infectious agents</has_Description>
+  </owl:Class>
+  <owl:Class rdf:ID="B97">
+    <rdfs:subClassOf rdf:resource="#B95_B97"/>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Viral agents as the cause of diseases classified to other chapters</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#B97_7">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Papillomavirus as the cause of diseases classified to other chapters</has_Description>
+    <rdfs:subClassOf rdf:resource="#B97"/>
+  </owl:Class>
+  <owl:Class rdf:about="#A00_B99">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Certain infectious and parasitic diseases</has_Description>
+    <owl:disjointWith rdf:resource="#Z00_Z99"/>
+    <owl:disjointWith rdf:resource="#C00_D48"/>>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#R00_R99"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#ICD10_Chapter"/>
+    <has_Italian_Label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></has_Italian_Label>
+  </owl:Class>
+  <owl:Class rdf:about="#C53">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Malignant neoplasm of cervix uteri</has_Description>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#C51_C58"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="C53_9">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="C53_0"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="C53_1"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="C53_8"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#C53"/>
+    </rdfs:subClassOf>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cervix uteri, unspecified</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#C53_8">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Overlapping lesion of cervix uteri</has_Description>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#C53_0"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#C53_1"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#C53_9"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#C53"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#C53_1">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Exocervix</has_Description>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#C53_0"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#C53_8"/>
+    <owl:disjointWith rdf:resource="#C53_9"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#C53"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#C53_0">
+    <owl:disjointWith rdf:resource="#C53_1"/>
+    <owl:disjointWith rdf:resource="#C53_8"/>
+    <owl:disjointWith rdf:resource="#C53_9"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#C53"/>
+    </rdfs:subClassOf>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Endocervix</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#C51_C58">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Malignant neoplasms of female genital organs</has_Description>
+    <owl:disjointWith rdf:resource="#D00_D09"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#C00_D48"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#R87">
+    <rdfs:subClassOf rdf:resource="#R83_R89"/>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abnormal findings in specimens from female genital organs</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#R87_6">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abnormal cytological findings</has_Description>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#R87"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#R87_8"/>
+  </owl:Class>
+  <owl:Class rdf:about="#R87_8">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#R87"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#R87_6"/>
+    </owl:disjointWith>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Other abnormal findings</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#R83_R89">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#R00_R99"/>
+    </rdfs:subClassOf>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Abnormal findings on examination of other body fluids, substances and tissues, without diagnosis</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#R00_R99">
+    <has_Italian_Label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></has_Italian_Label>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified</has_Description>
+    <owl:disjointWith rdf:resource="#A00_B99"/>
+    <rdfs:subClassOf rdf:resource="#ICD10_Chapter"/>
+    <owl:disjointWith rdf:resource="#Z00_Z99"/>
+    <owl:disjointWith rdf:resource="#C00_D48"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Z01_4">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Z01"/>
+    </rdfs:subClassOf>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gynaecological examination (general)(routine)</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#Z01">
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Other special examinations and investigations of persons without complaint or reported diagnosis</has_Description>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Z00_Z13"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Z00_Z13">
+    <rdfs:subClassOf rdf:resource="#Z00_Z99"/>
+  <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Persons encountering health services for examination and investigation</has_Description>
+  </owl:Class>
+  <owl:Class rdf:about="#Z00_Z99">
+    <has_Italian_Label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></has_Italian_Label>
+    <rdfs:subClassOf rdf:resource="#ICD10_Chapter"/>
+    <owl:disjointWith rdf:resource="#C00_D48"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#A00_B99"/>
+    </owl:disjointWith>
+    <has_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Factors influencing health status and contact with health services</has_Description>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#R00_R99"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:AnnotationProperty rdf:ID="has_Italian_Label">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:ID="has_Description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:AnnotationProperty>
+
+</rdf:RDF>
