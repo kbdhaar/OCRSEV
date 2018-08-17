@@ -7418,7 +7418,6 @@ the a supports either the existence of b, or the truth value of b.</obo:IAO_0000
     <!-- http://purl.obolibrary.org/obo/RO_0002573 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002573">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <obo:IAO_0000115>A relation that holds between an attribute or a qualifier and another attribute.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
@@ -11824,16 +11823,6 @@ Environments include natural environments or exposures, experimentally applied c
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <obo:IAO_0000589>quality (PATO)</obo:IAO_0000589>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quality</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
@@ -11883,7 +11872,7 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physical object quality</rdfs:label>
     </owl:Class>
     

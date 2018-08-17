@@ -338,6 +338,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
@@ -422,6 +428,19 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000014">
+        <obo:IAO_0000115 xml:lang="en">A representation that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2010-07-19T10:18:02Z</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label>clinical finding</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000016">
@@ -431,6 +450,33 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000232>creation date: 2010-07-19T10:20:20Z</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
         <rdfs:label>clinical picture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000057">
+        <obo:IAO_0000115 xml:lang="en">A sequence of acts of observing and measuring qualities of a patient performed by a clinician; measurements may occur with and without elicitation.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2010-07-19T11:50:18Z</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label>physical examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000090 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">A processual entity whose completion is hypothesized (by a healthcare provider) to alleviate the signs and symptoms associated with a disorder</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=35</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogms.owl"/>
+        <rdfs:label>treatment</rdfs:label>
     </owl:Class>
     
 
@@ -574,8 +620,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <dc:creator>Sivaram Arabandi</dc:creator>
         <dc:creator>Lindsay Cowell</dc:creator>
         <dc:date>2009-08-07</dc:date>
-        <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Richard Scheuermann</dc:creator>
+        <dc:creator>Cornelius Rosse</dc:creator>
         <dc:creator>Anand Kumar</dc:creator>
         <rdfs:comment>The Ontology for General Medical Science (OGMS) is based on the papers Toward an Ontological Treatment of Disease and Diagnosis and On Carcinomas and Other Pathological Entities. The ontology attempts to address some of the issues raised at the Workshop on Ontology of Diseases (Dallas, TX). OGMS was formerly called the clinical phenotype ontology. Terms from OGMS hang from the Basic Formal Ontology.
 
