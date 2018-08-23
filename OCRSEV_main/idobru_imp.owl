@@ -741,12 +741,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -863,30 +857,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000155"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000156"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -907,30 +877,6 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000126"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000130"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -939,31 +885,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1913,8 +1834,8 @@
         <obo:IAO_0000600 xml:lang="en">An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])</obo:IAO_0000600>
         <obo:IAO_0000116 xml:lang="en">Occurrent doesn&apos;t have a closure axiom because the subclasses don&apos;t necessarily exhaust all possibilites. An example would be the sum of a process and the process boundary of another process.</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">An entity that has temporal parts and that happens, unfolds or develops through time.</obo:IAO_0000115>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
@@ -1947,12 +1868,12 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Spatial regions do not participate in processes.</obo:IAO_0000116>
         <obo:IAO_0000602>(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] </obo:IAO_0000602>
-        <obo:IAO_0000600 xml:lang="en">A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])</obo:IAO_0000600>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
+        <obo:IAO_0000600 xml:lang="en">A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])</obo:IAO_0000600>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000602>(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] </obo:IAO_0000602>
-        <obo:BFO_0000179>s-region</obo:BFO_0000179>
         <obo:IAO_0000116 xml:lang="en">Spatial region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn&apos;t overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.</obo:IAO_0000116>
+        <obo:BFO_0000179>s-region</obo:BFO_0000179>
         <obo:IAO_0000601 xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</obo:IAO_0000601>
         <obo:BFO_0000180>SpatialRegion</obo:BFO_0000180>
         <rdfs:label xml:lang="en">spatial region</rdfs:label>
@@ -1983,15 +1904,15 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000602>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] </obo:IAO_0000602>
-        <obo:BFO_0000179>st-region</obo:BFO_0000179>
         <obo:IAO_0000602>(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] </obo:IAO_0000602>
+        <obo:BFO_0000179>st-region</obo:BFO_0000179>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
-        <obo:IAO_0000601 xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</obo:IAO_0000601>
         <rdfs:label xml:lang="en">spatiotemporal region</rdfs:label>
-        <obo:BFO_0000180>SpatiotemporalRegion</obo:BFO_0000180>
+        <obo:IAO_0000601 xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</obo:IAO_0000601>
         <obo:IAO_0000112 xml:lang="en">the spatiotemporal region occupied by a process of cellular meiosis.</obo:IAO_0000112>
+        <obo:BFO_0000180>SpatiotemporalRegion</obo:BFO_0000180>
         <obo:IAO_0000600 xml:lang="en">A spatiotemporal region is an occurrent entity that is part of spacetime. (axiom label in BFO2 Reference: [095-001])</obo:IAO_0000600>
         <obo:IAO_0000601 xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</obo:IAO_0000601>
     </rdf:Description>
@@ -2030,8 +1951,8 @@
         <obo:IAO_0000602>(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] </obo:IAO_0000602>
         <obo:IAO_0000112 xml:lang="en">the shape of this hole.</obo:IAO_0000112>
         <obo:IAO_0000602>(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] </obo:IAO_0000602>
-        <obo:IAO_0000112 xml:lang="en">the function of this heart: to pump blood</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the function of this heart: to pump blood</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the smell of this portion of mozzarella</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -2055,8 +1976,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
         <obo:BFO_0000179>gdc</obo:BFO_0000179>
-        <obo:IAO_0000112 xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</obo:IAO_0000112>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
+        <obo:IAO_0000112 xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
@@ -2073,8 +1994,8 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
         <obo:BFO_0000180>ProcessBoundary</obo:BFO_0000180>
         <obo:IAO_0000602>(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] </obo:IAO_0000602>
-        <rdfs:label xml:lang="en">process boundary</rdfs:label>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">process boundary</rdfs:label>
         <obo:BFO_0000179>p-boundary</obo:BFO_0000179>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
         <obo:IAO_0000115 xml:lang="en">p is a process boundary =Def. p is a temporal part of a process &amp; p has no proper temporal parts. (axiom label in BFO2 Reference: [084-001])</obo:IAO_0000115>
@@ -2099,8 +2020,8 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000112 xml:lang="en">a human being</obo:IAO_0000112>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">an aggregate of human beings.</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
         <obo:IAO_0000600 xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</obo:IAO_0000600>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">an epidemic</obo:IAO_0000112>
@@ -2133,8 +2054,8 @@
         <obo:IAO_0000112>[copied from inverse property &apos;concretizes at some time&apos;] you may concretize a poem as a pattern of memory traces in your head</obo:IAO_0000112>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
         <rdfs:label xml:lang="en">concretized by at some time</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
         <obo:IAO_0000112>[copied from inverse property &apos;concretizes at some time&apos;] You may concretize a piece of software by installing it in your computer</obo:IAO_0000112>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000070">
@@ -2145,8 +2066,8 @@
         <obo:IAO_0000112 xml:lang="en">the three-sided reciprocal s-dependence of the pitch, timbre and volume of a tone [45</obo:IAO_0000112>
         <obo:BFO_0000179>s-depends-on_at</obo:BFO_0000179>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: An entity – for example an act of communication or a game of football – can s-depends_on more than one entity. Complex phenomena for example in the psychological and social realms (such as inferring, commanding and requesting) or in the realm of multi-organismal biological processes (such as infection and resistance), will involve multiple families of dependence relations, involving both continuants and occurrents [1, 4, 28</obo:IAO_0000116>
-        <obo:IAO_0000602>(forall (x) (if (exists (y t) (specificallyDependsOnAt x y t)) (not (MaterialEntity x)))) // axiom label in BFO2 CLIF: [052-001] </obo:IAO_0000602>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
+        <obo:IAO_0000602>(forall (x) (if (exists (y t) (specificallyDependsOnAt x y t)) (not (MaterialEntity x)))) // axiom label in BFO2 CLIF: [052-001] </obo:IAO_0000602>
         <obo:IAO_0000112 xml:lang="en">reciprocal s-dependence between occurrents: a process of buying and the associated process of selling</obo:IAO_0000112>
         <obo:IAO_0000601 xml:lang="en">an entity does not s-depend_on any of its (continuant or occurrent) parts or on anything it is part of. (axiom label in BFO2 Reference: [013-002])</obo:IAO_0000601>
         <obo:IAO_0000112 xml:lang="en">one-sided s-dependence of a process on something: an instance of seeing (a relational process) s-depends_on some organism and on some seen entity, which may be an occurrent or a continuant</obo:IAO_0000112>
@@ -2166,8 +2087,8 @@
         <obo:IAO_0000112 xml:lang="en">A pain s-depends_on the organism that is experiencing the pain</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">one-sided s-dependence of one occurrent on another: a process of answering a question is dependent on a prior process of asking a question</obo:IAO_0000112>
         <rdfs:label xml:lang="en">specifically depends on at all times</rdfs:label>
-        <obo:IAO_0000112 xml:lang="en">reciprocal s-dependence between occurrents: a process of increasing the volume of a portion of gas while temperature remains constant and the associated process of  decreasing the pressure exerted by the gas</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">one-sided s-dependence of one occurrent on multiple independent continuants: a relational process of hitting a ball with a cricket bat</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">reciprocal s-dependence between occurrents: a process of increasing the volume of a portion of gas while temperature remains constant and the associated process of  decreasing the pressure exerted by the gas</obo:IAO_0000112>
         <obo:IAO_0000116>BFO2 Reference: specifically dependent continuant\; process; process boundary</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">one-sided s-dependence of a dependent continuant on an independent continuant: an instance of temperature s-depends_on some organism</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the one-sided dependence of an occurrent on an independent continuant: handwave on a hand</obo:IAO_0000112>
@@ -2175,8 +2096,8 @@
         <obo:IAO_0000112 xml:lang="en">a shape s-depends_on the shaped object</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">one-sided s-dependence of one occurrent on another: a process of obeying a command is dependent on a prior process of issuing a command</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">one-sided s-dependence of a dependent continuant on an independent continuant: an instance of headache s-depends_on some head</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">the one-sided dependence of an occurrent on an independent continuant: football match on the players, the ground, the ball</obo:IAO_0000112>
         <obo:IAO_0000601 xml:lang="en">If occurrent b s-depends_on some independent continuant c at t, then b s-depends_on c at every time at which b exists. (axiom label in BFO2 Reference: [015-002])</obo:IAO_0000601>
+        <obo:IAO_0000112 xml:lang="en">the one-sided dependence of an occurrent on an independent continuant: football match on the players, the ground, the ball</obo:IAO_0000112>
         <obo:IAO_0000602>(forall (x y t) (if (specificallyDependsOnAt x y t) (exists (z) (and (IndependentContinuant z) (not (SpatialRegion z)) (specificallyDependsOnAt x z t))))) // axiom label in BFO2 CLIF: [136-001] </obo:IAO_0000602>
         <obo:IAO_0000112 xml:lang="en">the three-sided reciprocal s-dependence of the hue, saturation and brightness of a color [45</obo:IAO_0000112>
     </rdf:Description>
@@ -2184,16 +2105,16 @@
         <obo:BFO_0000179>located-at-r_st</obo:BFO_0000179>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
         <obo:IAO_0000601 xml:lang="en">every region r is occupies_spatial_region r at all times. (axiom label in BFO2 Reference: [042-002])</obo:IAO_0000601>
-        <obo:BFO_0000180>occupiesSpatialRegionAt</obo:BFO_0000180>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:BFO_0000180>occupiesSpatialRegionAt</obo:BFO_0000180>
         <obo:IAO_0000600 xml:lang="en">b occupies_spatial_region r at t means that r is a spatial region in which independent continuant b is exactly located (axiom label in BFO2 Reference: [041-002])</obo:IAO_0000600>
         <rdfs:label xml:lang="en">occupies spatial region at some time</rdfs:label>
         <obo:IAO_0000602>(forall (x y r_1 t) (if (and (occupiesSpatialRegionAt x r_1 t) (continuantPartOfAt y x t)) (exists (r_2) (and (continuantPartOfAt r_2 r_1 t) (occupiesSpatialRegionAt y r_2 t))))) // axiom label in BFO2 CLIF: [043-001] </obo:IAO_0000602>
         <obo:IAO_0000116>BFO2 Reference: independent continuant</obo:IAO_0000116>
         <obo:IAO_0000602>(forall (x r t) (if (occupiesSpatialRegionAt x r t) (and (SpatialRegion r) (IndependentContinuant x)))) // axiom label in BFO2 CLIF: [041-002] </obo:IAO_0000602>
         <obo:IAO_0000116>Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance level, relation. The BFO reading of the binary relation &apos;occupies spatial region at some time@en&apos; is: exists t,  exists_at(x,t) &amp; exists_at(y,t) &amp; &apos;occupies spatial region@en&apos;(x,y,t)</obo:IAO_0000116>
-        <obo:IAO_0000601 xml:lang="en">if b occupies_spatial_region r at t &amp; b continuant_part_of b at t, then there is some r which is continuant_part_of r at t such that b  occupies_spatial_region r at t. (axiom label in BFO2 Reference: [043-001])</obo:IAO_0000601>
         <obo:IAO_0000116>BFO2 Reference: spatial region</obo:IAO_0000116>
+        <obo:IAO_0000601 xml:lang="en">if b occupies_spatial_region r at t &amp; b continuant_part_of b at t, then there is some r which is continuant_part_of r at t such that b  occupies_spatial_region r at t. (axiom label in BFO2 Reference: [043-001])</obo:IAO_0000601>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
         <obo:IAO_0000602>(forall (r t) (if (Region r) (occupiesSpatialRegionAt r r t))) // axiom label in BFO2 CLIF: [042-002] </obo:IAO_0000602>
     </rdf:Description>
@@ -2233,8 +2154,8 @@
         <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
         <obo:IAO_0000112>[copied from inverse property &apos;part of occurrent&apos;] the first set of the tennis match occurrent_part_of the tennis match.</obo:IAO_0000112>
         <obo:IAO_0000602>(iff (hasOccurrentPart a b) (occurrentPartOf b a)) // axiom label in BFO2 CLIF: [007-001] </obo:IAO_0000602>
-        <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO2 Reference: occurrent</obo:IAO_0000116>
         <rdfs:label xml:lang="en">has occurrent part</rdfs:label>
+        <obo:IAO_0000116>[copied from inverse property &apos;part of occurrent&apos;] BFO2 Reference: occurrent</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000118">
@@ -2290,8 +2211,8 @@
         <obo:IAO_0000112>[copied from inverse property &apos;specifically depends on at some time&apos;] one-sided s-dependence of a dependent continuant on an independent continuant: an instance of headache s-depends_on some head</obo:IAO_0000112>
         <obo:IAO_0000112>[copied from inverse property &apos;specifically depends on at some time&apos;] the two-sided reciprocal s-dependence of the roles of husband and wife [20</obo:IAO_0000112>
         <obo:BFO_0000179>has-s-dep_st</obo:BFO_0000179>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
         <obo:IAO_0000600>[copied from inverse property &apos;specifically depends on at some time&apos;] To say that b s-depends_on a at t is to say that b and c do not share common parts &amp; b is of its nature such that it cannot exist unless c exists &amp; b is not a boundary of c and b is not a site of which c is the host [64</obo:IAO_0000600>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
         <obo:IAO_0000112>[copied from inverse property &apos;specifically depends on at some time&apos;] reciprocal s-dependence between occurrents: a process of increasing the volume of a portion of gas while temperature remains constant and the associated process of  decreasing the pressure exerted by the gas</obo:IAO_0000112>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000116>[copied from inverse property &apos;specifically depends on at some time&apos;] Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance level, relation. The BFO reading of the binary relation &apos;specifically depends on at some time@en&apos; is: exists t,  exists_at(x,t) &amp; exists_at(y,t) &amp; &apos;specifically depends on@en&apos;(x,y,t)</obo:IAO_0000116>
@@ -2306,8 +2227,8 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000116>[copied from inverse property &apos;occupies spatiotemporal region&apos;] BFO 2 Reference: The occupies_spatiotemporal_region and occupies_temporal_region relations are the counterpart, on the occurrent side, of the relation occupies_spatial_region.</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">has spatiotemporal occupant</rdfs:label>
         <obo:BFO_0000179>occupied-by</obo:BFO_0000179>
+        <rdfs:label xml:lang="en">has spatiotemporal occupant</rdfs:label>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
         <obo:IAO_0000600>[copied from inverse property &apos;occupies spatiotemporal region&apos;] p occupies_spatiotemporal_region s. This is a primitive relation between an occurrent p and the spatiotemporal region s which is its spatiotemporal extent. (axiom label in BFO2 Reference: [082-003])</obo:IAO_0000600>
     </rdf:Description>
@@ -2324,8 +2245,8 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000132">
         <obo:IAO_0000601 xml:lang="en">occurrent_part_of is transitive. (axiom label in BFO2 Reference: [112-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">occurrent_part_of satisfies weak supplementation. (axiom label in BFO2 Reference: [124-001])</obo:IAO_0000601>
-        <obo:IAO_0000600 xml:lang="en">b occurrent_part_of c =Def. b is a part of c &amp; b and c are occurrents. (axiom label in BFO2 Reference: [003-002])</obo:IAO_0000600>
         <obo:IAO_0000116>BFO2 Reference: occurrent</obo:IAO_0000116>
+        <obo:IAO_0000600 xml:lang="en">b occurrent_part_of c =Def. b is a part of c &amp; b and c are occurrents. (axiom label in BFO2 Reference: [003-002])</obo:IAO_0000600>
         <obo:IAO_0000602>(forall (x) (if (Occurrent x) (occurrentPartOf x x))) // axiom label in BFO2 CLIF: [113-002] </obo:IAO_0000602>
         <rdfs:label xml:lang="en">part of occurrent</rdfs:label>
         <obo:BFO_0000180>occurrentPartOf</obo:BFO_0000180>
@@ -2340,11 +2261,11 @@
         <obo:IAO_0000602>(forall (x y z) (if (and (occurrentPartOf x y) (occurrentPartOf y z)) (occurrentPartOf x z))) // axiom label in BFO2 CLIF: [112-001] </obo:IAO_0000602>
         <obo:IAO_0000112 xml:lang="en">The process of a footballer’s heart beating once is an occurrent part but not a temporal_part of a game of football.</obo:IAO_0000112>
         <obo:IAO_0000601 xml:lang="en">occurrent_part_of is antisymmetric. (axiom label in BFO2 Reference: [123-001])</obo:IAO_0000601>
-        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: a (continuant or occurrent) part of itself. We appreciate that this is counterintuitive for some users, since it implies for example that President Obama is a part of himself. However it brings benefits in simplifying the logical formalism, and it captures an important feature of identity, namely that it is the limit case of mereological inclusion.</obo:IAO_0000116>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
         <obo:IAO_0000602>(forall (x y t) (if (and (occurrentPartOf x y t) (not (= x y))) (exists (z) (and (occurrentPartOf z y t) (not (exists (w) (and (occurrentPartOf w x t) (occurrentPartOf w z t)))))))) // axiom label in BFO2 CLIF: [124-001] </obo:IAO_0000602>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000139">
         <obo:IAO_0000112 xml:lang="en">your heart beating from 4pm to 5pm today is a temporal part of the process of your heart beating</obo:IAO_0000112>
@@ -2436,8 +2357,8 @@
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000157">
         <rdfs:label xml:lang="en">during which exists</rdfs:label>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000116>[copied from inverse property &apos;exists at&apos;] BFO2 Reference: entity</obo:IAO_0000116>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
         <obo:BFO_0000179>during-which-exists</obo:BFO_0000179>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
@@ -2458,8 +2379,8 @@
         <obo:IAO_0000601 xml:lang="en">If occurrent b s-depends_on some independent continuant c at t, then b s-depends_on c at every time at which b exists. (axiom label in BFO2 Reference: [015-002])</obo:IAO_0000601>
         <obo:IAO_0000112 xml:lang="en">A pain s-depends_on the organism that is experiencing the pain</obo:IAO_0000112>
         <obo:IAO_0000602>(forall (x) (if (exists (y t) (specificallyDependsOnAt x y t)) (not (MaterialEntity x)))) // axiom label in BFO2 CLIF: [052-001] </obo:IAO_0000602>
-        <obo:IAO_0000112 xml:lang="en">the two-sided reciprocal s-dependence of the roles of husband and wife [20</obo:IAO_0000112>
         <obo:IAO_0000116>Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance level, relation. The BFO reading of the binary relation &apos;specifically depends on at some time@en&apos; is: exists t,  exists_at(x,t) &amp; exists_at(y,t) &amp; &apos;specifically depends on@en&apos;(x,y,t)</obo:IAO_0000116>
+        <obo:IAO_0000112 xml:lang="en">the two-sided reciprocal s-dependence of the roles of husband and wife [20</obo:IAO_0000112>
         <obo:BFO_0000179>s-depends-on_st</obo:BFO_0000179>
         <obo:IAO_0000112 xml:lang="en">one-sided s-dependence of a dependent continuant on an independent continuant: an instance of headache s-depends_on some head</obo:IAO_0000112>
         <obo:IAO_0000116>BFO2 Reference: specifically dependent continuant\; process; process boundary</obo:IAO_0000116>
@@ -2514,8 +2435,8 @@
         <obo:IAO_0000602>(forall (x y t) (if (and (continuantPartOfAt x y t) (not (= x y))) (exists (z) (and (continuantPartOfAt z y t) (not (exists (w) (and (continuantPartOfAt w x t) (continuantPartOfAt w z t)))))))) // axiom label in BFO2 CLIF: [121-001] </obo:IAO_0000602>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
         <rdfs:label xml:lang="en">part of continuant at some time</rdfs:label>
-        <obo:IAO_0000602>(forall (x y t) (if (and (continuantPartOfAt x y t) (continuantPartOfAt y x t)) (= x y))) // axiom label in BFO2 CLIF: [120-001] </obo:IAO_0000602>
         <obo:IAO_0000116>Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance level, relation. The BFO reading of the binary relation &apos;part of continuant at some time@en&apos; is: exists t,  exists_at(x,t) &amp; exists_at(y,t) &amp; &apos;part of continuant@en&apos;(x,y,t)</obo:IAO_0000116>
+        <obo:IAO_0000602>(forall (x y t) (if (and (continuantPartOfAt x y t) (continuantPartOfAt y x t)) (= x y))) // axiom label in BFO2 CLIF: [120-001] </obo:IAO_0000602>
         <obo:IAO_0000112 xml:lang="en">Mary’s arm continuant_part_of Mary in the time of her life prior to her operation</obo:IAO_0000112>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000177">
@@ -2572,12 +2493,12 @@
         <obo:IAO_0000115>[copied from inverse property &apos;has continuant part at all times&apos;] b has_continuant_part c at t = Def. c continuant_part_of b at t. (axiom label in BFO2 Reference: [006-001])</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
         <obo:IAO_0000116>This is a binary version of a ternary time-indexed, instance level, relation. Unlike the rest of the temporalized relations which temporally quantify over existence of the subject of the relation, this relation temporally quantifies over the existence of the object of the relation. The relation is provided tentatively, to assess whether the GO needs such a relation. It is inverse of &apos;has continuant part at all times&apos;</obo:IAO_0000116>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg/ogg-bru.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <obo:IAO_0000116>[copied from inverse property &apos;has continuant part at all times&apos;] Alan Ruttenberg: This is a binary version of a ternary time-indexed, instance-level, relation. The BFO reading of the binary relation &apos;has continuant part at all times@en&apos; is: forall(t) exists_at(x,t) -&gt; exists_at(y,t) and &apos;has continuant part@en(x,y,t)&apos;.</obo:IAO_0000116>
         <obo:BFO_0000179>c-part-of-object_at</obo:BFO_0000179>
-        <obo:IAO_0000115>forall(t) exists_at(y,t) -&gt; exists_at(x,t) and &apos;part of continuant&apos;(x,y,t)</obo:IAO_0000115>
         <rdfs:label xml:lang="en">part of continuant at all times that whole exists</rdfs:label>
+        <obo:IAO_0000115>forall(t) exists_at(y,t) -&gt; exists_at(x,t) and &apos;part of continuant&apos;(x,y,t)</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000187">
         <obo:IAO_0000116>This is a binary version of a ternary time-indexed, instance level, relation. Unlike the rest of the temporalized relations which temporally quantify over existence of the subject of the relation, this relation temporally quantifies over the existence of the object of the relation. The relation is provided tentatively, to assess whether the GO needs such a relation. It is inverse of &apos;part of continuant at all times&apos;</obo:IAO_0000116>
@@ -2638,18 +2559,18 @@
         <obo:IAO_0000119 xml:lang="en">OBI_0000266</obo:IAO_0000119>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000102">
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
-        <rdfs:label xml:lang="en">data about an ontology part</rdfs:label>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">data about an ontology part</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">data about an ontology part is a data item about a part of an ontology, for example a term</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000136">
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido/brucellosis.owl"/>
         <rdfs:label xml:lang="en">is about</rdfs:label>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
         <obo:IAO_0000112 xml:lang="en">This document is about information artifacts and their representations</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">Smith, Ceusters, Ruttenberg, 2000 years of philosophy</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <obo:IAO_0000115 xml:lang="en">is_about is a (currently) primitive relation that relates an information artifact to an entity.</obo:IAO_0000115>

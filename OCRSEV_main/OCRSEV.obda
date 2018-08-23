@@ -155,15 +155,15 @@ source		select pnhid2_uri, p_uri, etl1_uri, sem_ind_uri FROM demo, sem WHERE sem
 
 mappingId	urn:PCORowl-refusal-to-answer
 target		<http://onefloridaconsortium.org/PCORowl_{rta2_uri}> a obo:PCORnet/PCORnet_00000010 ; obo:RO_0000056 <http://onefloridaconsortium.org/PCORowl_{ridqap1_uri}> ; obo:IAO_0000136 :OCRSEV_{p_uri} . 
-source		select rta2_uri, p_uri, ridqap1_uri from demo where rta2_uri IS NOT NULL and ridqap1_uri IS NOT NULL;
+source		select rta2_uri, p_uri, ridqap1_uri from demo ;
 
 mappingId	urn:PCORowl-race-ID-QAP
 target		<http://onefloridaconsortium.org/PCORowl_{ridqap1_uri}> a obo:PCORnet_00000021 . 
-source		select ridqap1_uri from demo where ridqap1_uri IS NOT NULL;
+source		select ridqap1_uri from demo ;
 
 mappingId	urn:PCORowl-homosapiens-participatesin-QAP
 target		:OCRSEV_{p_uri} obo:RO_0000056 <http://onefloridaconsortium.org/PCORowl_{ridqap1_uri}> . 
-source		select p_uri, ridqap1_uri from demo where and ridqap1_uri IS NOT NULL;
+source		select p_uri, ridqap1_uri from demo ;
 
 mappingId	urn:SEV-SEM
 target		:{SEM_uri} a :OCRSEV_00000532 ; rdfs:label {SEM} . 
@@ -533,7 +533,7 @@ source		select b.gyn_iri, c.orgn_iri, a.hce_iri from gynec as b, hosp as c, enco
 
 mappingId	urn:SEV-medi-gyn-hce
 target		:{gyn_iri} obo:BFO_0000056 :{hce_iri} . 
-source		select distinct a.hce_iri, b.gyn, c.gyn_iri from encount as a, tmp_pat as b, gynec as c 
+source		select distinct a.hce_iri, b.gyn, c.gyn_iri from encount as a, tmp_pat as b, gynec as c
 			where a.enc1 = b.enc2 and b.gyn = c.npi;
 
 mappingId	urn:SEV-medi-hce-patid

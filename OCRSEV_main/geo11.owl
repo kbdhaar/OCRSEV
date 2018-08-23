@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/geo/geo.owl#"
      xml:base="http://purl.obolibrary.org/obo/geo/geo.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -452,7 +452,6 @@ For a full list of PURLs, see the geo.yml file here: https://raw.githubuserconte
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000177">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
         <obo:BFO_0000179>c-part-of_at</obo:BFO_0000179>
         <obo:BFO_0000180>continuantPartOfAt</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">Mary’s arm continuant_part_of Mary in the time of her life prior to her operation</obo:IAO_0000112>
@@ -690,19 +689,6 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:label xml:lang="en">has participant</rdfs:label>
     </owl:ObjectProperty>
     
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-    
-
-
-        
 
 
     <!-- 
@@ -1398,7 +1384,19 @@ of this, different, term.</obo:IAO_0000116>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/obi.owl</obo:IAO_0000412>
         <rdfs:label xml:lang="en">data item label</rdfs:label>
     </owl:Class>
-        
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
