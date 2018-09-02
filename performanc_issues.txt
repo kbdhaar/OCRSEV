@@ -1,0 +1,31 @@
+performace issues:
+
+A basic SPARQL query, which is a recreation of one mapping related to 
+non-Hispanic variable on Ontop, took forever and did not produce any result. 
+From 'https://github.com/ontop/ontop/wiki/MappingDesignTips'
+[Avoid unnecessary joins in the source query. They are the main performance 
+issue, since they can slow down queries up to 100 times.], it is evident that 
+complex SQL queries with joins slow down SPARQL queries up to 100 times.
+After adding necessary primary and foreign keys to the tables required by the 
+same mapping, SPARQL query produced result in 1770 seconds.
+Adding "limit" to the query made it faster by 5 minutes which is about 17% of the 
+time taken without "limit".
+There was no difference in time when the same query was tried on a computer with
+a better RAM (from 12GB to 16GB). 
+Ontop has other performance issues related to source SQL queries and the database.
+[https://github.com/ontop/ontop/wiki/ObdalibIssues#Databases_and_SQL].
+Also, ontop does not support aggregate functions which are necessary to compute 
+variables such as "number of physicians per patient" and 
+"number of hospitals in 3-digit zip region".
+
+OCRSEV owl file and the above mentioned mapping were uploaded on Stardog and 
+the same query which took 1770 seconds on Ontop took only 650 ms on Stardog. 
+
+To do:
+1. Optimize Relational Database after doing some research on different optimization 
+techniques.
+2. Try performing the queries on a different and better server such as HiPerGator.
+
+Alternative:
+1. Convert all obda mappings into traditional R2RML mappings and upload on Stardog.
+2. Perform SPARQL queries on Stardog.
