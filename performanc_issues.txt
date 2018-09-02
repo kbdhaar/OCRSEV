@@ -19,7 +19,8 @@ variables such as "number of physicians per patient" and
 "number of hospitals in 3-digit zip region".
 
 OCRSEV owl file and the above mentioned mapping were uploaded on Stardog and 
-the same query which took 1770 seconds on Ontop took only 650 ms on Stardog. 
+the above mentioned query was tried. 
+This query which took 1770 seconds to finish on Ontop took only 650 ms on Stardog. 
 
 To do:
 1. Optimize Relational Database after doing some research on different optimization 
