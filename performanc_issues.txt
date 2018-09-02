@@ -1,6 +1,6 @@
 performace issues:
 
-A basic SPARQL query, which is a recreation of one mapping related to 
+A basic SPARQL query, which is written following a mapping related to 
 non-Hispanic variable on Ontop, took forever and did not produce any result. 
 From 'https://github.com/ontop/ontop/wiki/MappingDesignTips'
 [Avoid unnecessary joins in the source query. They are the main performance 
