@@ -1,4 +1,4 @@
-performace issues:
+performance issues:
 
 A basic SPARQL query, which is written following a mapping related to 
 non-Hispanic variable on Ontop, took forever and did not produce any result. 
