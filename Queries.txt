@@ -1,0 +1,36 @@
+Inter-personal level:
+1. How many physicians participate in different encounters for every CC patient?
+2. what is the role of most visited physician by every CC patient?
+3. What is the experience of every physician in years and how many CC patients has each physician encountered?
+
+Organizational-level:
+1. What is the MSPB value for every hospital and how many CC patients have had an encounter in each hospital?
+2. Which hospitals spend less than the National median for medicare (<1) and how many CC patients have had an encounter in each hospital?
+3. What is the experience of every CC physician in years and which hospital is each physician associated with?
+4. What is the average experience of all CC physician in years per hospital?
+
+Policy-level:
+1. List the people got diagnosed with CC before ACA? (how many/ what percent?)
+2. List the people got diagnosed with CC after ACA? (how many/ what percent?)
+3. List the people got diagnosed with CC before BCCPTA? (how many/ what percent?)
+4. List the people got diagnosed with CC after BCCPTA? (how many/ what percent?)
+
+Community-level:
+1. What is the smoking prevalence in every MMSA region and how many CC patients live in each region?
+2. What is the drinking prevalence in every MMSA region and how many CC patients live in each region?
+3. How many hospitals are present in every 3-digit zip region and how many CC patients live in each region?
+4. How many physicians are present in every 3-digit zip region and how many CC patients live in each region?
+
+Individual-level:
+1. List the CC patients who use tobacco? (what percent?)
+2. List the CC patients who have abnormal BP? (what percent?)
+3. What is the age at diagnosis of each CC patient?
+4. List the CC patients who did not have a medical insurance for their encounters. (What percent?)
+5. What is the biological sex of each CC patient?
+6. What is the sexual orientation of each CC patient?
+7. What is the gender of each CC patient?
+8. List the CC patients who have abnormal BMI. (What percent?)
+9. List the ethnicity of each CC patient? (what percent of Hispanic and non-Hispanic?)
+10. List the CC patients who have also had a diagnosis of HIV. (what percent?)
+11. List the CC patients who have also had a diagnosis of HPV. (what percent?)
+12. What is the race of each CC patient?
