@@ -182,7 +182,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000554 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000554">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000100"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <obo:IAO_0000115 xml:lang="en">A data property that used to specify the ethnic identity datum of a person, that corresponds to the instance of the centrally registered identifier denoting that person.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Dharani K Balasubramanian</obo:IAO_0000117>
@@ -195,7 +194,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000555 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000555">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000098"/>
         <obo:IAO_0000115 xml:lang="en">A data property that used to specify the racial identity datum of a person, that corresponds to the instance of the centrally registered identifier denoting that person.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has race</rdfs:label>
@@ -206,7 +204,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000556 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000556">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CMO_0000105"/>
         <obo:IAO_0000115 xml:lang="en">A data property that used to specify the body mass index of a person that corresponds to the instance of the centrally registered identifier denoting that person,  which is an indicator of the body fat the person is carrying based on the ratio of the person&apos;s weight to height.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Definition of &quot;Body Mass Index&quot; modified from NCIT (http://purl.obolibrary.org/obo/NCIT_C16358).</obo:IAO_0000119>
@@ -239,7 +236,6 @@ Description: An ontology developed for social-ecological variables that are resp
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000565">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000557"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/CDRSEF00000005"/>
         <obo:IAO_0000115 xml:lang="en">A data property that used to specify the systolic blood pressure measurement datum of a person, that corresponds to the instance of the centrally registered identifier denoting that person.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has systolic blood pressure</rdfs:label>
@@ -251,7 +247,6 @@ Description: An ontology developed for social-ecological variables that are resp
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000566">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000557"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/CDRSEF00000004"/>
         <obo:IAO_0000115 xml:lang="en">A data property that used to specify the diastolic blood pressure measurement datum of a person, that corresponds to the instance of the centrally registered identifier denoting that person.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has diastolic blood pressure</rdfs:label>
@@ -262,7 +257,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000575 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000575">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000567"/>
         <obo:IAO_0000115 xml:lang="en">A data property that used to specify the biological sex of a person, that corresponds to the instance of the centrally registered identifier denoting that person.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has sex</rdfs:label>
@@ -284,7 +278,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000585 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000585">
-        <obo:IAO_0000115 xml:lang="en">A data property that is used to specify the latitude coordinate measurement datum corresponding to a given zipcode.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has latitude coordinate</rdfs:label>
     </owl:DatatypeProperty>
@@ -294,7 +287,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000586 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000586">
-        <obo:IAO_0000115 xml:lang="en">A data property that is used to specify the latitude coordinate measurement datum corresponding to a given zipcode.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has longitude coordinate</rdfs:label>
     </owl:DatatypeProperty>
@@ -305,7 +297,6 @@ Description: An ontology developed for social-ecological variables that are resp
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000587">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000606"/>
-        <obo:IAO_0000115 xml:lang="en">A data property that used to specify the zipcode of the geographical region in which a person is located, corresponding to the centrally registered patient identifier denoting a patient.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">is located in the area with zipcode</rdfs:label>
     </owl:DatatypeProperty>
@@ -323,7 +314,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000590 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000590">
-        <obo:IAO_0000115 xml:lang="en">A data property that is used to specify the latitude-longitude coordinate pair measurement datum corresponding to a given zipcode.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has location coordinates</rdfs:label>
     </owl:DatatypeProperty>
@@ -333,8 +323,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000591 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000591">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000583"/>
-        <obo:IAO_0000115 xml:lang="en">A data property that is used to specify the BRFSS current smoker status prevalence variable corresponding to a given latitude-logitude coordinate pair measurement datum.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has current smoker status prevalence</rdfs:label>
     </owl:DatatypeProperty>
@@ -344,8 +332,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000592 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000592">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000584"/>
-        <obo:IAO_0000115 xml:lang="en">A data property that is used to specify the BRFSS current non-smoker status prevalence variable corresponding to a given latitude-logitude coordinate pair measurement datum.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has current non-smoker status prevalence</rdfs:label>
     </owl:DatatypeProperty>
@@ -355,8 +341,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000603 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000603">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000601"/>
-        <obo:IAO_0000115 xml:lang="en">A data property that is used to specify the BRFSS current drinker status prevalence variable corresponding to a given latitude-logitude coordinate pair measurement datum.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has current drinker status prevalence</rdfs:label>
     </owl:DatatypeProperty>
@@ -366,8 +350,6 @@ Description: An ontology developed for social-ecological variables that are resp
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000604 -->
 
     <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000604">
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000602"/>
-        <obo:IAO_0000115 xml:lang="en">A data property that is used to specify the BRFSS current non-drinker status prevalence variable corresponding to a given latitude-logitude coordinate pair measurement datum.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has current non-drinker status pervalence</rdfs:label>
     </owl:DatatypeProperty>
@@ -459,14 +441,6 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000713"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_21 -->
-
-    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_21">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
     </rdf:Description>
     
 
@@ -1360,6 +1334,12 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </rdf:Description>
     
 
@@ -1372,10 +1352,78 @@ Description: An ontology developed for social-ecological variables that are resp
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000011"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000104 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000104">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000011"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
@@ -1495,7 +1543,7 @@ Jamillah Z Khan</rdfs:comment>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000506">
         <rdfs:comment xml:lang="en">A data item which represents one or more factors influencing an individual, relating to human society and its members or the system of production and management of material wealth.
 
-[Dharani K Balasubramanian]</rdfs:comment>
+[Added to OCRSEV by Dharani K Balasubramanian]</rdfs:comment>
     </rdf:Description>
     
 
@@ -2696,10 +2744,13 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000075"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity which is an aggregate of carrier routes that includes city routes, rural routes, highway contract routes, Post Office Box sections, and general delivery units.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <obo:IAO_0000119>USPS: https://about.usps.com/publications/pub32.pdf</obo:IAO_0000119>
         <rdfs:label xml:lang="en">aggregate of postal delivery routes</rdfs:label>
     </owl:Class>
     
@@ -2709,6 +2760,9 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000578">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115 xml:lang="en">A plan specification which includes a collection of physical addresses to which a carrier who is a an employee or contractor delivers and collects mail on foot or by vehicle.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <obo:IAO_0000119>USPS: https://about.usps.com/publications/pub32.pdf</obo:IAO_0000119>
         <rdfs:label xml:lang="en">postal delivery route</rdfs:label>
     </owl:Class>
     
@@ -2726,12 +2780,45 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000608"/>
+                <owl:onProperty rdf:resource="http://purl.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000545"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A categorical variable which assumes a prevalence value that represents the use or lack of use of any product made for human consumption from Nicotiana tabacum within a population living in a specific geographical region.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This variable always has some time associated with it which is defined by when smoking in that area happens.</rdfs:comment>
         <rdfs:label xml:lang="en">area smoking prevalence variable</rdfs:label>
     </owl:Class>
     
@@ -2829,11 +2916,44 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000609"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000709"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A categorical variable which assumes a prevalence value that represents the intake or the lack of intake of human-consumable alcohol by a population living in a specific geographical region.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">This variable always has some time associated with it which is defined by when drinking in that area happens.</rdfs:comment>
         <rdfs:label xml:lang="en">area drinking prevalence variable</rdfs:label>
     </owl:Class>
     
@@ -2942,6 +3062,12 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000609">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000607"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A realizable entity that is an aggregate of entities whose components are all drinker roles.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">collection of drinker roles</rdfs:label>
@@ -2954,24 +3080,13 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000700">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000075"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000075"/>
-                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
-                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000075"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An object aggregate that is not itself an architectural structure and whose members are only architectural structures that have some feature in common.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">aggregate of architectural structures</rdfs:label>
     </owl:Class>
     
@@ -3015,7 +3130,35 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000009"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">number of hospitals in a region</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000700"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/STATO_0000205"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000739"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An ordinal variable which assumes a value that represents the number of hospitals in a specific geographical region.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">number of hospitals in a region variable</rdfs:label>
     </owl:Class>
     
 
@@ -3071,6 +3214,8 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A number of hospitals in a region variable which assumes a value that represents the number of hospitals in a region and is about a region which can be represented as a three-digit zipcode.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">number of hospitals in a 3-digit zip region</rdfs:label>
     </owl:Class>
     
@@ -3128,7 +3273,9 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">number of physicians in a region</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An ordinal variable which assumes a value that represents the number of physicians in a specific geographical region.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balabasubramanian</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">number of physicians in a region variable</rdfs:label>
     </owl:Class>
     
 
@@ -3153,7 +3300,9 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">number of physicians in a three-digit zip region</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A number of physicians in a region variable which assumes a value that represents the number of physicians in a region and is about a region which can be represented as a three-digit zipcode.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">number of physicians in a three-digit zip region variable</rdfs:label>
     </owl:Class>
     
 
@@ -3196,6 +3345,8 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A number of physicians in a three-digit zip region variable which is about the number of physicians and each physician&apos;s primary medical specility is categorized according to Medicare Provider Enrollment, Chain and Ownership System (PECOS) codes in Medicare data and is atleast one of the following : generel practice, family practice, general surgery, radiation oncology, interventional radiology, diagnostic radiology, surgical oncology, obtetrics/gynecology, gynecological oncology or medical oncology.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">number of OCRSEV cervical cancer physicians in a three-digit zip region</rdfs:label>
     </owl:Class>
     
@@ -3208,7 +3359,7 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="https://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3220,6 +3371,17 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A role that inheres in an organism and is realized by habitually consuming alcoholic beverages.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">drinker role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process in which any alcoholic beverage made for human consumption is consumed by drinking.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">alcohol drinking behavior</rdfs:label>
     </owl:Class>
     
 
@@ -3239,6 +3401,12 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000712">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IDO_0100650"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A screening of a person to detect malignant neoplasm in an anatomical entity which is not known to exist at the time of evaluation.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">screening for malignant neoplasm</rdfs:label>
@@ -3250,6 +3418,12 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000713">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000712"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A screening for malignant neoplasm of cervix of a person to detect malignant neoplasm in an anatomical entity which is not known to exist at the time of evaluation.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">screening for malignant neoplasm of cervix</rdfs:label>
@@ -3298,10 +3472,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000719 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000719">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is general practice.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV general physician role</rdfs:label>
+        <rdfs:label xml:lang="en">general physician role</rdfs:label>
     </owl:Class>
     
 
@@ -3309,10 +3483,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000721 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000721">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is family practice.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV family physician role</rdfs:label>
+        <rdfs:label xml:lang="en">family physician role</rdfs:label>
     </owl:Class>
     
 
@@ -3320,10 +3494,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000723 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000723">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is general surgery.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV general surgeon role</rdfs:label>
+        <rdfs:label xml:lang="en">general surgeon role</rdfs:label>
     </owl:Class>
     
 
@@ -3331,10 +3505,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000725 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000725">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is gynecological oncology.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV gynecological oncologist role</rdfs:label>
+        <rdfs:label xml:lang="en">gynecological oncologist role</rdfs:label>
     </owl:Class>
     
 
@@ -3342,10 +3516,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000727 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000727">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is interventional radiology.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV interventional radiologist role</rdfs:label>
+        <rdfs:label xml:lang="en">interventional radiologist role</rdfs:label>
     </owl:Class>
     
 
@@ -3353,10 +3527,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000729 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000729">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is medical oncology.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV medical oncologist role</rdfs:label>
+        <rdfs:label xml:lang="en">medical oncologist role</rdfs:label>
     </owl:Class>
     
 
@@ -3364,10 +3538,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000731 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000731">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is obstetrics/gynecology.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV gynecologist role</rdfs:label>
+        <rdfs:label xml:lang="en">gynecologist role</rdfs:label>
     </owl:Class>
     
 
@@ -3375,10 +3549,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000735 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000735">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is surgical oncology.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV surgical oncologist role</rdfs:label>
+        <rdfs:label xml:lang="en">surgical oncologist role</rdfs:label>
     </owl:Class>
     
 
@@ -3386,10 +3560,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000736 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000736">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is diagnostice radiology.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV diagnostic radiologist role</rdfs:label>
+        <rdfs:label xml:lang="en">diagnostic radiologist role</rdfs:label>
     </owl:Class>
     
 
@@ -3397,10 +3571,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000737 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000737">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000715"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">An OCRSEV cervical cancer physician role that inheres in an individual whose primary medical specility is radiation oncology.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OCRSEV radiation oncologist role</rdfs:label>
+        <rdfs:label xml:lang="en">radiation oncologist role</rdfs:label>
     </owl:Class>
     
 
@@ -3409,6 +3583,22 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000738">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A CRID which is a unique 10-digit identification number issued to health care providers in the United States by the Centers for Medicare and Medicaid Services (CMS).</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000118>NPI</obo:IAO_0000118>
@@ -3422,6 +3612,12 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000739">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000102"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A CRID which is a hospital&apos;s identification number that is linked to its Medicare provider agreement and is used for CMS certification.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000118>CNN</obo:IAO_0000118>
@@ -3437,6 +3633,39 @@ The first 2 digits identify the State in which the provider is located and the l
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000740">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000228"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000535"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000746"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000155"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000038"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An ordinal variable which is the ratio of medicare-spending per beneficiary(MSPB) amount to the National Episode-weighted median of MSPB amount where MSPB amount is the sum of a hospital&apos;s standardized, wisk-adjusted spending across all of the hospital&apos;s eligible episodes calulated over the total number of episodes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.aamc.org/download/363786/data/mspbwebinarslides.pdf
+https://www.cms.gov/Medicare/Medicare-Fee-for-Service-Payment/PhysicianFeedbackProgram/Downloads/2014-MIF-MSPB-TIN-2015-May.pdf</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">Source: https://www.aamc.org/download/363786/data/mspbwebinarslides.pdf
+MPSB ratios are calculated based on a hospitals’ average spending compared to the national median.
+1 =&gt; Spending is about the same as the national median
+&gt;1 =&gt; Spending is MORE than the national median
+&lt; 1 =&gt; Spending is LESS than the national median
+
+MSPB always has some time associated with it which is defined by when the payment occurs.</rdfs:comment>
         <rdfs:label xml:lang="en">medicare spending per beneficiary per hospital</rdfs:label>
     </owl:Class>
     
@@ -3446,6 +3675,12 @@ The first 2 digits identify the State in which the provider is located and the l
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000741">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000252"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000533"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/obo/IAO_0000136"/>
@@ -3469,6 +3704,24 @@ The first 2 digits identify the State in which the provider is located and the l
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000533"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000540"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An individual medical insurance variable which is as specified in PCORnet CDM specification and is included in the PCORnet CDM databsase and is true if the enrollment table indicates &quot;I&quot;  for the field &quot;ENR_BASIS&quot;.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">PCORnet medical insurance variable</rdfs:label>
@@ -3480,16 +3733,31 @@ The first 2 digits identify the State in which the provider is located and the l
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000743">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://vivoweb.org/ontology/core#MedicalResidency"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the specified output of a person successfully fulfilling the evaluation criteria at the end of medical residency program.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">Modified from definition for &quot;successful completion of anesthesiology residency information&quot; from the &quot;Ontology of Organizational Structures of Trauma centers and Trauma systems&quot;.
+(http://purl.obolibrary.org/obo/OOSTT_00000233)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">successful completion of medical residency information</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000744 -->
+    <!-- http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000746 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000744">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000740"/>
-        <rdfs:label xml:lang="en">OCRSEV medicare spending per beneficiary per hospital in 2016</rdfs:label>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000746">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process in which Medicare part A and part B payments occur for services provided to a Medicare beneficiary during an episode that spans from three days prior to an inpatient hospital admission through 30 days after discharge, as part of the hospital Value-Based Purchasing program.</obo:IAO_0000115>
+        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
+        <obo:IAO_0000119>source1: https://www.medicare.gov/hospitalcompare/Data/Medicare-Spending-Beneficiary.html
+source2:
+http://qualitynet.org/dcs/ContentServer?c=Page&amp;pagename=QnetPublic%2FPage%2FQnetTier2&amp;cid=1228772053996</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">medicare spending per beneficiary payment process</rdfs:label>
     </owl:Class>
     
 
@@ -4134,17 +4402,9 @@ OT=Other</rdfs:comment>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
-    
-
-
-    <!-- https://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710 -->
-
-    <owl:Class rdf:about="https://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A planned process in which any alcoholic beverage made for human consumption is consumed by drinking.</obo:IAO_0000115>
-        <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">alcohol consumption behavior</rdfs:label>
-    </owl:Class>
+    <rdf:Description>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
     </rdf:Description>
@@ -4186,6 +4446,27 @@ OT=Other</rdfs:comment>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CMO_0000012"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CMO_0000105"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CMO_0000106"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000443"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000572"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000574"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000575"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000580"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000650"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IDO_0100650"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000338"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000116"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/STATO_0000207"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000548"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000746"/>
+            <rdf:Description rdf:about="http://vivoweb.org/ontology/core#MedicalResidency"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>

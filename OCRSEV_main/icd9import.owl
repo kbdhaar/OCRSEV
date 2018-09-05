@@ -254,14 +254,6 @@
     
 
 
-    <!-- http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_21 -->
-
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_21">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIAGNOSES</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_22202 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_22202">
@@ -320,49 +312,19 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTHER BACTERIAL DISEASES (030-041.99)</rdfs:label>
     </owl:Class>
     
-    <!-- http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_5861 -->
 
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_5861">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Human papillomavirus infection in conditions classified elsewhere and of unspecified site (079.4)</rdfs:label>
-        <C_FULLNAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >\i2b2\Diagnoses\ICD9CM\DISEASES AND INJURIES\INFECTIOUS AND PARASITIC DISEASES\OTHER DISEASES DUE TO VIRUSES AND CHLAMYDIAE\Viral and chlamydial infection in conditions classified elsewhere and of unspecified site\Human papillomavirus infection in conditions classified elsewhere and of unspecified site\</C_FULLNAME>
-        <C_BASECODE rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >ICD9CM:079.4</C_BASECODE>
-        <ICD9_LEVEL5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Human papillomavirus infection in conditions classified elsewhere and of unspecified site (079.4)</ICD9_LEVEL5>
-        <rdfs:subClassOf>
-            <owl:Class rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4658"/>
-        </rdfs:subClassOf>
-        <C_PATH rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >DX00001053</C_PATH>
-    </owl:Class>
+
+    <!-- http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4658 -->
 
     <owl:Class rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4658">
         <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4645"/>
-        <ICD9_LEVEL4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >OTHER DISEASES DUE TO VIRUSES AND CHLAMYDIAE (070-079.99)</ICD9_LEVEL4>
-        <C_PATH rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >DX00000957</C_PATH>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >OTHER DISEASES DUE TO VIRUSES AND CHLAMYDIAE (070-079.99)</rdfs:label>
-        <C_FULLNAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >\i2b2\Diagnoses\ICD9CM\DISEASES AND INJURIES\INFECTIOUS AND PARASITIC DISEASES\OTHER DISEASES DUE TO VIRUSES AND CHLAMYDIAE\</C_FULLNAME>
+        <C_FULLNAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\i2b2\Diagnoses\ICD9CM\DISEASES AND INJURIES\INFECTIOUS AND PARASITIC DISEASES\OTHER DISEASES DUE TO VIRUSES AND CHLAMYDIAE\</C_FULLNAME>
+        <C_PATH rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DX00000957</C_PATH>
+        <ICD9_LEVEL4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTHER DISEASES DUE TO VIRUSES AND CHLAMYDIAE (070-079.99)</ICD9_LEVEL4>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTHER DISEASES DUE TO VIRUSES AND CHLAMYDIAE (070-079.99)</rdfs:label>
     </owl:Class>
+    
 
-    <owl:Class rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4645">
-        <C_PATH rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >DX00000002</C_PATH>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >INFECTIOUS AND PARASITIC DISEASES (001-139.99)</rdfs:label>
-        <C_FULLNAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >\i2b2\Diagnoses\ICD9CM\DISEASES AND INJURIES\INFECTIOUS AND PARASITIC DISEASES\</C_FULLNAME>
-        <rdfs:subClassOf>
-            <owl:Class rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4646"/>
-        </rdfs:subClassOf>
-        <ICD9_LEVEL3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >INFECTIOUS AND PARASITIC DISEASES (001-139.99)</ICD9_LEVEL3>
-    </owl:Class>
 
     <!-- http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4670 -->
 
@@ -397,6 +359,19 @@
         <C_PATH rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DX00000751</C_PATH>
         <ICD9_LEVEL5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human immunodeficiency virus [HIV] disease (042)</ICD9_LEVEL5>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human immunodeficiency virus [HIV] disease (042)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_5861 -->
+
+    <owl:Class rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_5861">
+        <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4658"/>
+        <C_BASECODE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9CM:079.4</C_BASECODE>
+        <C_FULLNAME rdf:datatype="http://www.w3.org/2001/XMLSchema#string">\i2b2\Diagnoses\ICD9CM\DISEASES AND INJURIES\INFECTIOUS AND PARASITIC DISEASES\OTHER DISEASES DUE TO VIRUSES AND CHLAMYDIAE\Viral and chlamydial infection in conditions classified elsewhere and of unspecified site\Human papillomavirus infection in conditions classified elsewhere and of unspecified site\</C_FULLNAME>
+        <C_PATH rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DX00001053</C_PATH>
+        <ICD9_LEVEL5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human papillomavirus infection in conditions classified elsewhere and of unspecified site (079.4)</ICD9_LEVEL5>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human papillomavirus infection in conditions classified elsewhere and of unspecified site (079.4)</rdfs:label>
     </owl:Class>
     
 

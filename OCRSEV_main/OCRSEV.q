@@ -8,7 +8,10 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX pato: <http://purl.obolibrary.org/obo/pato#>
 PREFIX pcor: <http://purl.obolibrary.org/obo/PCORnet/>
 PREFIX apollo_sv: <http://purl.obolibrary.org/obo/apollo_sv.owl/>
-select distinct *  where {?patid rdf:type pcor:PCORnet_00000019. ?patid obo:IAO_0000219 obo:OMRSE_00000030. ?patid :OCRSEV_00000556 ?BMI. FILTER regex(?BMI , 22.00)}
+select ?pnhid_uri ?sem_uri ?etl1_uri ?p_uri where {?pnhid_uri rdf:type pcor:PCORnet_00000016; 
+obo:OBI_0000312 ?etl1_uri ; 
+obo:IAO_0000136 ?p_uri ;
+obo:BFO_0000050 ?sem_uri . }
 
 [QueryItem="patid_diastolic_less_60"]
 PREFIX : <http://purl.obolibrary.org/obo/OCRSEV/>

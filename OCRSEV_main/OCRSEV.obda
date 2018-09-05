@@ -86,20 +86,20 @@ target		<https://onefloridaconsortium.org/PCORowl_{tr3_uri}> a obo:BFO_0000038 ;
 source		SELECT tr3_uri, birth_date AS birth_date_str FROM demo;
 
 mappingId	urn:PCORowl-hispanic
-target		<http://onefloridaconsortium.org/PCORowl_{hlid1_uri}> a obo:OMRSE_00000127 ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{eip1_uri}> . 
+target		<http://onefloridaconsortium.org/PCORowl_{hlid1_uri}> a obo:OMRSE_00000127 ; obo:IAO_0000136 :{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{eip1_uri}> . 
 source		SELECT hlid1_uri, p_uri, etl1_uri, eip1_uri FROM demo WHERE demo.hispanic = 'Y'
 
 mappingId	urn:PCORowl-nonhispanic
-target		<http://onefloridaconsortium.org/PCORowl_{nhlid1_uri}> a obo:OMRSE_00000128 ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{eip1_uri}> . 
+target		<http://onefloridaconsortium.org/PCORowl_{nhlid1_uri}> a obo:OMRSE_00000128 ; obo:IAO_0000136 :{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{eip1_uri}> . 
 source		SELECT hlid1_uri as nhlid1_uri, p_uri, etl1_uri, eip1_uri FROM demo WHERE demo.hispanic =  'N'
 
 mappingId	urn:PCORowl-PCORnet-hispanic
-target		<http://onefloridaconsortium.org/PCORowl_{pnhid1_uri}> a obo:PCORnet/PCORnet_00000016 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
-source		SELECT pnhid1_uri, etl1_uri, p_uri, sem_ind_uri FROM demo, sem WHERE sem.sem = demo.sem and demo.hispanic = 'Y'
+target		<http://onefloridaconsortium.org/PCORowl_{pnhid1_uri}> a obo:PCORnet/PCORnet_00000016 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
+source		SELECT pnhid1_uri, etl1_uri, p_uri, sem_ind_uri FROM demo, sem WHERE demo.hispanic = 'Y'
 
 mappingId	urn:PCORowl-PCORnet-nonhispanic
-target		<http://onefloridaconsortium.org/PCORowl_{pnhid1_uri}> a obo:PCORnet/PCORnet_00000017 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
-source		SELECT pnhid1_uri, etl1_uri, p_uri,  sem_ind_uri FROM demo, sem WHERE sem.sem = demo.sem and demo.hispanic = 'N'
+target		<http://onefloridaconsortium.org/PCORowl_{pnhid1_uri}> a obo:PCORnet/PCORnet_00000017 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
+source		SELECT pnhid1_uri, etl1_uri, p_uri,  sem_ind_uri FROM demo, sem WHERE demo.hispanic = 'N'
 
 mappingId	urn:PCORowl-ethnicIdentification-process
 target		<http://onefloridaconsortium.org/PCORowl_{eip1_uri}> a obo:OMRSE_00000101 . 
@@ -114,47 +114,47 @@ target		<http://onefloridaconsortium.org/PCORowl_{rip1_uri}> a obo:OMRSE_0000009
 source		select rip1_uri from demo;
 
 mappingId	urn:PCORowl-01-AmericanIndian
-target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000180 ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
+target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000180 ; obo:IAO_0000136 :{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
 source		select hlid2_uri, p_uri, etl1_uri, rip1_uri from demo where race = 01;
 
 mappingId	urn:PCORowl-AmericanIndian
-target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000006 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
-source		select pnhid2_uri, p_uri, etl1_uri, sem_ind_uri FROM demo, sem WHERE sem.sem = demo.sem and demo.race = 01;
+target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000006 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
+source		select pnhid2_uri, p_uri, etl1_uri, sem_ind_uri FROM demo, sem WHERE demo.race = 01;
 
 mappingId	urn:PCORowl-02-Asian
-target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000181 ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
+target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000181 ; obo:IAO_0000136 :{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
 source		select hlid2_uri, p_uri, etl1_uri, rip1_uri from demo where race = 02;
 
 mappingId	urn:PCORowl-Asian
-target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000007 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
-source		select pnhid2_uri, p_uri, etl1_uri,sem_ind_uri FROM demo, sem WHERE sem.sem = demo.sem and demo.race = 02;
+target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000007 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
+source		select pnhid2_uri, p_uri, etl1_uri,sem_ind_uri FROM demo, sem WHERE  demo.race = 02;
 
 mappingId	urn:PCORowl-03-Black
-target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000182 ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
+target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000182 ; obo:IAO_0000136 :{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
 source		select hlid2_uri, p_uri, etl1_uri, rip1_uri from demo where race = 03;
 
 mappingId	urn:PCORowl-Black
-target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000009 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
-source		select pnhid2_uri, p_uri, etl1_uri,sem_ind_uri FROM demo, sem WHERE sem.sem = demo.sem and demo.race = 03;
+target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000009 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
+source		select pnhid2_uri, p_uri, etl1_uri,sem_ind_uri FROM demo, sem WHERE  demo.race = 03;
 
 mappingId	urn:PCORowl-04-NativeHawaiian
-target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000183 ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
+target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000183 ; obo:IAO_0000136 :{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
 source		select hlid2_uri, p_uri, etl1_uri, rip1_uri from demo where race = 04;
 
 mappingId	urn:PCORowl-NativeHawaiian
-target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000013 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
-source		select pnhid2_uri, p_uri, etl1_uri, sem_ind_uri FROM demo, sem WHERE sem.sem = demo.sem and  demo.race = 04;
+target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000013 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
+source		select pnhid2_uri, p_uri, etl1_uri, sem_ind_uri FROM demo, sem WHERE demo.race = 04;
 
 mappingId	urn:PCORowl-05-White
-target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000184 ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
+target		<http://onefloridaconsortium.org/PCORowl_{hlid2_uri}> a obo:OMRSE_00000184 ; obo:IAO_0000136 :{p_uri} ; obo:OBI_0000295 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{rip1_uri}> . 
 source		select hlid2_uri, p_uri, etl1_uri, rip1_uri from demo where race = 05;
 
 mappingId	urn:PCORowl-White
-target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000014 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :OCRSEV_{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
-source		select pnhid2_uri, p_uri, etl1_uri, sem_ind_uri FROM demo, sem WHERE sem.sem = demo.sem and demo.race = 05;
+target		<http://onefloridaconsortium.org/PCORowl_{pnhid2_uri}> a obo:PCORnet/PCORnet_00000014 ; obo:OBI_0000312 <http://onefloridaconsortium.org/PCORowl_{etl1_uri}> ; obo:IAO_0000136 :{p_uri} ; obo:BFO_0000050 :{sem_ind_uri} . 
+source		select pnhid2_uri, p_uri, etl1_uri, sem_ind_uri FROM demo, sem WHERE demo.race = 05;
 
 mappingId	urn:PCORowl-refusal-to-answer
-target		<http://onefloridaconsortium.org/PCORowl_{rta2_uri}> a obo:PCORnet/PCORnet_00000010 ; obo:RO_0000056 <http://onefloridaconsortium.org/PCORowl_{ridqap1_uri}> ; obo:IAO_0000136 :OCRSEV_{p_uri} . 
+target		<http://onefloridaconsortium.org/PCORowl_{rta2_uri}> a obo:PCORnet/PCORnet_00000010 ; obo:RO_0000056 <http://onefloridaconsortium.org/PCORowl_{ridqap1_uri}> ; obo:IAO_0000136 :{p_uri} . 
 source		select rta2_uri, p_uri, ridqap1_uri from demo ;
 
 mappingId	urn:PCORowl-race-ID-QAP
@@ -162,7 +162,7 @@ target		<http://onefloridaconsortium.org/PCORowl_{ridqap1_uri}> a obo:PCORnet_00
 source		select ridqap1_uri from demo ;
 
 mappingId	urn:PCORowl-homosapiens-participatesin-QAP
-target		:OCRSEV_{p_uri} obo:RO_0000056 <http://onefloridaconsortium.org/PCORowl_{ridqap1_uri}> . 
+target		:{p_uri} obo:RO_0000056 <http://onefloridaconsortium.org/PCORowl_{ridqap1_uri}> . 
 source		select p_uri, ridqap1_uri from demo ;
 
 mappingId	urn:SEV-SEM
@@ -190,8 +190,8 @@ target		:{SEM_pol_uri} a :OCRSEV_00000537 ; obo:BFO_0000050 :{SEM_uri} .
 source		select SEM_uri, SEM_pol_uri from sem;
 
 mappingId	urn:SEV-brfss-smokerstatus
-target		:{prev_uri} a :OCRSEV_00000583 ; rdfs:label <{data_value}> ; obo:IAO_0000136 :{coll_uri} , :{space_uri} ; obo:BFO_0000050 :{sem_comm_uri} . 
-source		select a.data_value, a.prev_uri, a.coll_uri, a.space_uri, b.sem_comm_uri from brfss_smart as a, sem as b where a.sem = b.sem and Class = 'Tobacco Use' and Topic = 'Current Smoker Status' and Response = 'Yes';
+target		:{prev_uri} a :OCRSEV_00000583 ; rdfs:label <{data_value}> ; obo:IAO_0000136 :{coll_uri} , :{space_uri} , :{behavior_iri} ; obo:BFO_0000050 :{sem_comm_uri} . 
+source		select a.data_value, a.prev_uri, a.coll_uri, a.space_uri, a.behavior_iri, b.sem_comm_uri from brfss_smart as a, sem as b where a.sem = b.sem and Class = 'Tobacco Use' and Topic = 'Current Smoker Status' and Response = 'Yes';
 
 mappingId	urn:SEV-brfss-smoke-collection
 target		:{coll_uri} a obo:OMRSE_00000023 ; obo:RO_0002351 :{role_uri} . 
@@ -218,8 +218,8 @@ target		:{zip_iri} a :OCRSEV_00000583 ; rdfs:label {zipcodes} .
 source		select a.space_uri, a.Locationdesc, b.zipcodes, b.p_uri, c.zip_iri from brfss_smart as a , demo as b, mmsa as c where a.LocationID = c.locid and b.zipcodes = c.zipcodes and Class = 'Tobacco Use' and Topic = 'Current Smoker Status' and Response = 'Yes';
 
 mappingId	urn:SEV-brfss-drinkerstatus
-target		:{prev_uri} a :OCRSEV_00000601 ; rdfs:label <{data_value}> ; obo:IAO_0000136 :{coll_uri} , :{space_uri} ; obo:BFO_0000050 :{sem_comm_uri} . 
-source		select a.data_value, a.prev_uri as prev_uri, a.coll_uri as coll_uri, a.space_uri as space_uri, b.sem_comm_uri  as sem_comm_uri from brfss_smart as a, sem as b where a.sem = b.sem and Class = 'Alcohol Consumption' and Topic = 'Alcohol Consumption' and Response = 'Yes';
+target		:{prev_uri} a :OCRSEV_00000601 ; rdfs:label <{data_value}> ; obo:IAO_0000136 :{coll_uri} , :{space_uri} , :{behavior_iri} ; obo:BFO_0000050 :{sem_comm_uri} . 
+source		select a.data_value, a.prev_uri as prev_uri, a.coll_uri as coll_uri, a.space_uri as space_uri, a.behavior_iri, b.sem_comm_uri  as sem_comm_uri from brfss_smart as a, sem as b where a.sem = b.sem and Class = 'Alcohol Consumption' and Topic = 'Alcohol Consumption' and Response = 'Yes';
 
 mappingId	urn:SEV-brfss-drinker-colletion
 target		:{coll_uri} a obo:OMRSE_00000023 ; obo:RO_0002351 :{role_uri} . 
@@ -536,12 +536,72 @@ target		:{gyn_iri} obo:BFO_0000056 :{hce_iri} .
 source		select distinct a.hce_iri, b.gyn, c.gyn_iri from encount as a, tmp_pat as b, gynec as c
 			where a.enc1 = b.enc2 and b.gyn = c.npi;
 
-mappingId	urn:SEV-medi-hce-patid
-target		:{hce_iri} a obo:OGMS_0000097 ; obo:BFO_0000057 :{p_uri} . 
-source		select distinct a.hce_iri, b.patid, c.p_uri from encount as a, tmp_pat as b, demo as c where a.enc1 = b.enc2 and b.patid = c.patient_id;
+mappingId	urn:SEV-medi-hce-patid-interval
+target		:{hce_iri} a obo:OGMS_0000097 ; obo:BFO_0000057 :{p_uri} ; obo:BFO_0000155 :{interval_iri} . 
+source		select distinct a.hce_iri, a.interval_iri, b.patid, c.p_uri from encount as a, tmp_pat as b, demo as c where a.enc1 = b.enc2 and b.patid = c.patient_id;
 
-mappingId	urn:SEV-medi-msp-orgn
-target		:{mspb_iri} a :OCRSEV_00000740 ; obo:IAO_0000136 :{orgn_iri} ; rdfs:label <{Score}> . 
-source		select a.mspb_iri, a.Score, b.orgn_iri from mspb as a, hosp as b where a.providerid = b.provider_id;
+mappingId	urn:SEV-medi-mspb-orgn
+target		:{mspb_iri} a :OCRSEV_00000740 ; obo:IAO_0000136 :{orgn_iri} , :{payment_iri} ; rdfs:label <{Score}> . 
+source		select a.mspb_iri, a.Score, a.payment_iri, b.orgn_iri from mspb as a, hosp as b where a.providerid = b.provider_id;
+
+mappingId	urn:SEV-pcor-diag-process
+target		:{diag_iri} a obo:OGMS_0000073 ; obo:OBI_0000312 :{process_iri} . 
+source		select diag_iri, process_iri from diagnosis11 ;
+
+mappingId	urn:SEV-pcor-process-interval
+target		:{process_iri} a obo:OGMS_0000104 ; obo:BFO_0000155 :{interval_iri} . 
+source		select process_iri, interval_iri from diagnosis11 ;
+
+mappingId	urn:SEV-pcor-diag-interval-date
+target		:{interval_iri} a obo:BFO_0000038 ; obo:RO_0002091 :{date_iri} . 
+source		select interval_iri, date_iri from diagnosis11 ;
+
+mappingId	urn:SEV-pcor-diag-date-label
+target		:{date_iri} a obo:BFO_0000038 ; rdfs:label <{admit_date}> . 
+source		select interval_iri, date_iri from diagnosis11 ;
+
+mappingId	urn:SEV-pcor-hce-interval-date
+target		:{interval_iri} a obo:BFO_0000038 ; obo:RO_0002091 :{date_iri} . 
+source		select interval_iri, date_iri from encount;
+
+mappingId	urn:SEV-medi-hce-date-label
+target		:{date_iri} a obo:BFO_0000038 ; rdfs:label <{admit_date}> . 
+source		select interval_iri, date_iri from encount;
+
+mappingId	urn:SEV-medi-mspb-payment-interval
+target		:{payment_iri} a :OCRSEV_00000746 ; obo:BFO_0000155 :{interval_iri} . 
+source		select payment_iri, interval_iri from mspb;
+
+mappingId	urn:SEV-medi-mspb-interval-year
+target		:{interval_iri} a obo:BFO_0000038 ; obo:RO_0002091 :{date_iri} . 
+source		select interval_iri, year_iri from mspb;
+
+mappingId	urn:SEV-medi-mspb-year-label
+target		:{year_iri} a obo:BFO_0000038 ; rdfs:label <{year1}> . 
+source		select year_iri, substr(Measure_Start_Date, 5, 4) as year1 from mspb;
+
+mappingId	urn:SEV-brfss-smoker-behavior-interval
+target		:{behavior_iri} a :OCRSEV_00000548 ; obo:BFO_0000155 :{interval_iri} . 
+source		select behavior_iri, interval_iri from brfss_smart where Topic = 'Current Smoker Status' and Response = 'Yes';
+
+mappingId	urn:SEV-brfss-smoker-interval-year
+target		:{interval_iri} a obo:BFO_0000038 ; obo:BFO_0000139 :{year_iri} . 
+source		select interval_iri, year_iri from brfss_smart where Topic = 'Current Smoker Status' and Response = 'Yes';
+
+mappingId	urn:SEV-brfss-smoker-year-label
+target		:{year_iri} a obo:BFO_0000038 ; rdfs:label <{year}> . 
+source		select year_iri, year from brfss_smart where Topic = 'Current Smoker Status' and Response = 'Yes';
+
+mappingId	urn:SEV-brfss-drinker-behavior-interval
+target		:{behavior_iri} a :OCRSEV_00000710 ; obo:BFO_0000155 :{interval_iri} . 
+source		select behavior_iri, interval_iri from brfss_smart where Topic = 'Alcohol Consumption' and Response = 'Yes';
+
+mappingId	urn:SEV-brfss-drinker-interval-year
+target		:{interval_iri} a obo:BFO_0000038 ; obo:BFO_0000139 :{year_iri} . 
+source		select interval_iri, year_iri from brfss_smart where Topic = 'Alcohol Consumption' and Response = 'Yes';
+
+mappingId	urn:SEV-brfss-drinker-year-label
+target		:{date_iri} a obo:BFO_0000038 ; rdfs:label <{year}> . 
+source		select year_iri, year from brfss_smart where Topic = 'Alcohol Consumption' and Response = 'Yes';
 ]]
 
