@@ -15,8 +15,6 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/sseppala/ontologies/2016/11/vso_merged">
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/awqbi/vital-sign-ontology/master/src/ontology/vso-external.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/awqbi/vital-sign-ontology/master/src/ontology/vso-external-derived.owl"/>
         <obo:IAO_0000116>BFO 2 Reference: BFO does not claim to be a complete coverage of all entities. It seeks only to provide coverage of those entities studied by empirical science together with those entities which affect or are involved in human activities such as data processing and planning – coverage that is sufficiently broad to provide assistance to those engaged in building domain ontologies for purposes of data annotation [17</obo:IAO_0000116>
         <rdfs:comment>This ontology is intended for encoding constraints on ro/core in a way that is usable by EL reasoners such as Elk. In future this ontology may be derived by some automatic or semi-automatic translation process from a more direct encoding.</rdfs:comment>
         <dc:contributor>Ron Rudnicki</dc:contributor>
@@ -48,8 +46,8 @@
         <obo:IAO_0000116>BFO 2 Reference: BFO’s treatment of continuants and occurrents – as also its treatment of regions, rests on a dichotomy between space and time, and on the view that there are two perspectives on reality – earlier called the ‘SNAP’ and ‘SPAN’ perspectives, both of which are essential to the non-reductionist representation of reality as we understand it from the best available science [30</obo:IAO_0000116>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/oborel/obo-relations/wiki/ROCore</foaf:homepage>
         <rdfs:comment>This ontology is in early development. Expect it to change.</rdfs:comment>
-        <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. ‘Entity’ is an example of one such primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
         <foaf:homepage rdf:resource="http://code.google.com/p/bfo/"/>
+        <obo:IAO_0000116>BFO 2 Reference: For both terms and relational expressions in BFO, we distinguish between primitive and defined. ‘Entity’ is an example of one such primitive term. Primitive terms in a highest-level ontology such as BFO are terms that are so basic to our understanding of reality that there is no way of defining them in a non-circular fashion. For these, therefore, we can provide only elucidations, supplemented by examples and by axioms.</obo:IAO_0000116>
         <dc:title xml:lang="en">OBO Relations Ontology</dc:title>
         <rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/bfo/dev/owl"/>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
@@ -3376,22 +3374,6 @@ Expands_to: T has_fasciculating_neuron_projection that synapse_in some R.</obo:I
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002207">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002210"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0010000"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000000"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0010000"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000000"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>Candidate definition: x directly_develops from y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p, and a substantial portion of the matter of y comes from x, and the start of x is coincident with or after the end of y</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
@@ -3738,7 +3720,6 @@ Expands_to: T has_fasciculating_neuron_projection that synapse_in some R.</obo:I
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002226">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002258"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002207"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0001025"/>
@@ -4037,8 +4018,6 @@ Expands_to: T has_fasciculating_neuron_projection that synapse_in some R.</obo:I
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002254">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002258"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002255"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000051"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -4075,8 +4054,6 @@ Expands_to: T has_fasciculating_neuron_projection that synapse_in some R.</obo:I
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002256">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002258"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002257"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>t1 induced_by t2 if there is a process of developmental induction (GO:0031128) with t1 and t2 as interacting participants. t2 causes t1 to change its fate from a precursor anatomical structure type T to T&apos;, where T&apos; develops_from T</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
@@ -4266,7 +4243,6 @@ Expands_to: T has_fasciculating_neuron_projection that synapse_in some R.</obo:I
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002295">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002324"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss).</obo:IAO_0000115>
         <obo:IAO_0000116>This property and its subproperties are being used primarily for the definition of GO developmental processes. The property hierarchy mirrors the core GO hierarchy. In future we may be able to make do with a more minimal set of properties, but due to the way GO is currently structured we require highly specific relations to avoid incorrect entailments. To avoid this, the corresponding genus terms in GO should be declared mutually disjoint.</obo:IAO_0000116>
@@ -4389,8 +4365,6 @@ Expands_to: T has_fasciculating_neuron_projection that synapse_in some R.</obo:I
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002303">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002321"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/ENVO_01000254"/>
         <obo:IAO_0000112>Hydrozoa (NCBITaxon_6074) SubClassOf &apos;has habitat&apos; some &apos;Hydrozoa habitat&apos;
 where
 &apos;Hydrozoa habitat&apos; SubClassOf overlaps some (&apos;marine environment&apos; (ENVO_00000569) and &apos;freshwater environment&apos; (ENVO_01000306) and &apos;wetland&apos; (ENVO_00000043)) and &apos;has part&apos; some (freshwater (ENVO_00002011) or &apos;sea water&apos; (ENVO_00002149)) -- http://eol.org/pages/1795/overview</obo:IAO_0000112>
@@ -7444,8 +7418,6 @@ the a supports either the existence of b, or the truth value of b.</obo:IAO_0000
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002576">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <obo:IAO_0000115>inverse of has skeleton</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
@@ -11261,26 +11233,6 @@ Environments include natural environments or exposures, experimentally applied c
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CARO_0000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
-        <rdfs:label xml:lang="en">anatomical structure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
-        <rdfs:label xml:lang="en">material anatomical entity</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CARO_0000007 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000007">
@@ -11293,8 +11245,8 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.obolibrary.org/obo/CARO_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
         <rdfs:label>connected anatomical system</rdfs:label>
     </owl:Class>
     
@@ -11303,7 +11255,7 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.obolibrary.org/obo/CARO_0000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
         <obo:IAO_0000589>cell part (CARO)</obo:IAO_0000589>
         <rdfs:label xml:lang="en">cell part</rdfs:label>
@@ -11314,7 +11266,7 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.obolibrary.org/obo/CARO_0001000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/caro.owl"/>
         <rdfs:label xml:lang="en">multi-cell-part structure</rdfs:label>
     </owl:Class>
@@ -11334,7 +11286,7 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.obolibrary.org/obo/CARO_0010000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0010000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002207"/>
@@ -11350,7 +11302,7 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002207"/>
@@ -11946,6 +11898,18 @@ Environments include natural environments or exposures, experimentally applied c
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000119>
         <rdfs:label>system</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000061 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465"/>
     
 
 
@@ -12843,7 +12807,6 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.org/obo/owl/FMA#FMA_14598 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_14598">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_62955"/>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Lumen of rectum</rdfs:label>
     </owl:Class>
@@ -12863,7 +12826,6 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.org/obo/owl/FMA#FMA_19982 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_19982">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_62955"/>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Lumen of vagina</rdfs:label>
     </owl:Class>
@@ -12873,7 +12835,6 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.org/obo/owl/FMA#FMA_20292 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_20292">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_62955"/>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Oral cavity</rdfs:label>
     </owl:Class>
@@ -12883,7 +12844,6 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.org/obo/owl/FMA#FMA_20394 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_20394">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_62955"/>
         <obo:IAO_0000115>Anatomical structure which is the aggregate material substance of an individual member of the human species.</obo:IAO_0000115>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Human body</rdfs:label>
@@ -12914,7 +12874,6 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.org/obo/owl/FMA#FMA_22796 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_22796">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_50720"/>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Ulnar artery</rdfs:label>
     </owl:Class>
@@ -12964,7 +12923,6 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.org/obo/owl/FMA#FMA_49650 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_49650">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_50720"/>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Superficial temporal artery</rdfs:label>
     </owl:Class>
@@ -12974,7 +12932,6 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.org/obo/owl/FMA#FMA_50720 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_50720">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_62955"/>
         <obo:IAO_0000115>Subdivision of arterial tree (organ) which consists of branching sets of tubes (arterial trunk) that form a tree; together with other arterial trees (organ part), it constitutes an arterial tree (organ).</obo:IAO_0000115>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Artery</rdfs:label>
@@ -12985,7 +12942,6 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.org/obo/owl/FMA#FMA_61464 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_61464">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_62955"/>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Axillary fossa</rdfs:label>
     </owl:Class>
@@ -12995,22 +12951,8 @@ Environments include natural environments or exposures, experimentally applied c
     <!-- http://purl.org/obo/owl/FMA#FMA_61734 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_61734">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_62955"/>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">External acoustic tube</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/obo/owl/FMA#FMA_62955 -->
-
-    <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_62955">
-        <obo:IAO_0000115>Organismal continuant entity which is enclose\
-d by the bona fide boundary of an organism or is an attribute of its structural\
- organization. Examples: cell, heart, head, peritoneal cavity, apex of lung, an\
-atomical term, sagittal plane.</obo:IAO_0000115>
-        <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
-        <rdfs:label xml:lang="en">Anatomical entity</rdfs:label>
     </owl:Class>
     
 
@@ -13018,7 +12960,6 @@ atomical term, sagittal plane.</obo:IAO_0000115>
     <!-- http://purl.org/obo/owl/FMA#FMA_67473 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_67473">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_62955"/>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Wall of blood vessel</rdfs:label>
     </owl:Class>
@@ -13070,7 +13011,6 @@ atomical term, sagittal plane.</obo:IAO_0000115>
     <!-- http://purl.org/obo/owl/FMA#FMA_9670 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_9670">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/FMA#FMA_62955"/>
         <obo:IAO_0000115>Portion of body substance which consists of plasma and blood cells.</obo:IAO_0000115>
         <VSO:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA.owl"/>
         <rdfs:label xml:lang="en">Portion of blood</rdfs:label>

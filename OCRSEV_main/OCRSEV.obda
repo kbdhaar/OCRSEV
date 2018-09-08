@@ -1,6 +1,7 @@
 [PrefixDeclaration]
 :		http://purl.obolibrary.org/obo/OCRSEV/
 dc:		http://purl.org/dc/elements/1.1/
+efo:		http://www.ebi.ac.uk/efo/
 obo:		http://purl.obolibrary.org/obo/
 owl:		http://www.w3.org/2002/07/owl#
 rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#

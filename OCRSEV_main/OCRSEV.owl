@@ -41,8 +41,8 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/chmoimp"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2017-04-11/ro.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/idobru_imp.owl"/>
-        <owl:imports rdf:resource="http://www.semanticweb.org/sseppala/ontologies/2016/11/vso_merged"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/oostt_main"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/sseppala/ontologies/2016/11/vso_merged"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/2016-09-14/obib.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/doid.owl"/>
@@ -59,6 +59,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ogmsextra"/>
         <owl:imports rdf:resource="http://purl.bioontology.org/ontology/HOM-ICD9CM/"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/variableimport"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno/bfo2/pno.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2017-03-24/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://www.owl-ontologies.com/unnamed.owl"/>
         <dc:contributor>Jamillah Z Khan</dc:contributor>
@@ -388,10 +389,12 @@ Description: An ontology developed for social-ecological variables that are resp
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                                        <owl:someValuesFrom>
                                             <owl:Class>
                                                 <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0000993"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000002"/>
@@ -402,12 +405,8 @@ Description: An ontology developed for social-ecological variables that are resp
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
@@ -415,6 +414,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -428,6 +428,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000714"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -441,6 +442,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000713"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -454,6 +456,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_526"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -467,6 +470,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001668"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -480,6 +484,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -493,6 +498,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -506,6 +512,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -519,6 +526,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -532,6 +540,7 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
@@ -545,17 +554,18 @@ Description: An ontology developed for social-ecological variables that are resp
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000007 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000007">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000007">
         <owl:equivalentClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -612,14 +622,7 @@ Description: An ontology developed for social-ecological variables that are resp
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/DINTO_000164"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000119"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PATO_0000128"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0000119"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -919,26 +922,6 @@ Description: An ontology developed for social-ecological variables that are resp
         <rdfs:comment xml:lang="en">An information content entity that is an organized collection of data, typically in digital form.
 - Dharani K Balasubramanian</rdfs:comment>
     </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GENEPIO_0001890 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GENEPIO_0001890">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000767"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000009"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000577"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
     
 
 
@@ -1896,7 +1879,7 @@ Jamillah Z Khan</rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
     </rdf:Description>
     
 
@@ -2091,9 +2074,8 @@ Jamillah Z Khan</rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A measurement datum representing the pressure exerted by circulating blood on the walls of blood vessels.
 
-Modified from http://en.wikipedia.org/wiki/Blood_pressure
-
-Jamillah Z Khan</rdfs:comment>
+Added to OCRSEV by Jamillah Z Khan</rdfs:comment>
+        <rdfs:comment>Definition modified from http://en.wikipedia.org/wiki/Blood_pressure</rdfs:comment>
     </rdf:Description>
     
 
@@ -2748,6 +2730,12 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000075"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000578"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity which is an aggregate of carrier routes that includes city routes, rural routes, highway contract routes, Post Office Box sections, and general delivery units.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119>USPS: https://about.usps.com/publications/pub32.pdf</obo:IAO_0000119>
@@ -2760,7 +2748,7 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000578">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000115 xml:lang="en">A plan specification which includes a collection of physical addresses to which a carrier who is a an employee or contractor delivers and collects mail on foot or by vehicle.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A plan specification which includes a collection of physical addresses to which a carrier who is an employee or a contractor, delivers and collects mail.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119>USPS: https://about.usps.com/publications/pub32.pdf</obo:IAO_0000119>
         <rdfs:label xml:lang="en">postal delivery route</rdfs:label>
@@ -2895,7 +2883,7 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000598">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001716"/>
-        <obo:IAO_0000115 xml:lang="en">A database that includes state-wise telephone surveys of risk behaviors related to health from all 50 states.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A database that includes state-wide telephone surveys of risk behaviors related to health from all 50 states.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">CDC -BRFSS [Internet]. Cdc.gov. 2017 [cited 9 July 2017]. https://www.cdc.gov/brfss/index.html.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Behavioral Risk Factor Surveillance System (BRFSS) database</rdfs:label>
@@ -3030,11 +3018,31 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000075"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A realizable entity that is an aggregate of entities whose components are all roles.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A realizable entity that is an aggregate of entities whose components are all roles and each of these roles inheres in a human who is a member of a collection of humans.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <rdfs:label xml:lang="en">collection of roles</rdfs:label>
     </owl:Class>
@@ -3049,6 +3057,32 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000075"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000545"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A realizable entity that is an aggregate of entities whose components are all tobacco user roles.</obo:IAO_0000115>
@@ -3066,6 +3100,32 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000075"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000709"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A realizable entity that is an aggregate of entities whose components are all drinker roles.</obo:IAO_0000115>
@@ -3586,17 +3646,7 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A CRID which is a unique 10-digit identification number issued to health care providers in the United States by the Centers for Medicare and Medicaid Services (CMS).</obo:IAO_0000115>
@@ -4096,14 +4146,6 @@ OT=Other</rdfs:comment>
     
 
 
-    <!-- http://purl.org/obo/owl/FMA#FMA_62955 -->
-
-    <rdf:Description rdf:about="http://purl.org/obo/owl/FMA#FMA_62955">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    </rdf:Description>
-    
-
-
     <!-- http://purl.org/obo/owl/FMA#FMA_67473 -->
 
     <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_67473">
@@ -4252,20 +4294,6 @@ OT=Other</rdfs:comment>
     
 
 
-    <!-- http://semanticscience.org/resource/SIO_000767 -->
-
-    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000767">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://www.ebi.ac.uk/efo/EFO_0001668 -->
 
     <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0001668">
@@ -4297,6 +4325,8 @@ OT=Other</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_526"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An ICD 10 code for Human Immunodeficiency virus disease.</rdfs:comment>
+        <rdfs:comment>This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
     </rdf:Description>
     
 
@@ -4310,6 +4340,7 @@ OT=Other</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.ebi.ac.uk/efo/EFO_0001668"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
     </rdf:Description>
     
 
@@ -4323,6 +4354,7 @@ OT=Other</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
     </rdf:Description>
     
 
@@ -4336,6 +4368,7 @@ OT=Other</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/DOID_4362"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
     </rdf:Description>
     
 
@@ -4344,6 +4377,11 @@ OT=Other</rdfs:comment>
 
     <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#ICD10_Chapter">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000073"/>
+        <rdfs:comment xml:lang="en">A diagnosis which is represented in the form of a code that is the 10th version of the International Classification of Diseases(ICD) which according to World Health Organization is defined as the diagnostic classification standard for all clinical and research purposes and includes diseases, disorders, injuries and other related health conditions in a comprehensive way.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Definition source: http://www.who.int/classifications/icd/factsheet/en/</rdfs:comment>
+        <rdfs:comment xml:lang="en">ICD10 diagnosis codes were imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.
+
+ICD10_Chapter denotes an ICD 10 code and every ICD10 code is a diagnosis data item.</rdfs:comment>
     </rdf:Description>
     
 
@@ -4361,10 +4399,12 @@ OT=Other</rdfs:comment>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
+                                        <owl:someValuesFrom>
                                             <owl:Class>
                                                 <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHMO_0000993"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003134"/>
@@ -4375,12 +4415,8 @@ OT=Other</rdfs:comment>
                                                     </owl:Restriction>
                                                 </owl:intersectionOf>
                                             </owl:Class>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000993"/>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
@@ -4388,6 +4424,10 @@ OT=Other</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Source: https://www.icd10data.com/ICD10CM/Codes/R00-R99/R83-R89/R87-/R87</rdfs:comment>
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.
+
+ICD 10 code for a clinical finding that is about a specimen derived from a portion of a female genital organ.</rdfs:comment>
     </rdf:Description>
     
 
@@ -4401,6 +4441,7 @@ OT=Other</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000714"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
         <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
@@ -4419,6 +4460,46 @@ OT=Other</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_15526">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_15527">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_20">
+        <rdfs:comment xml:lang="en">Definition Source: http://www.who.int/classifications/icd/factsheet/en/</rdfs:comment>
+        <rdfs:comment xml:lang="en">ICD 9 diagnosis codes were imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Definition: A diagnosis which is represented in the form of a code that is the 9th version of the International Classification of Diseases(ICD) which according to World Health Organization is defined as the diagnostic classification standard for all clinical and research purposes and includes diseases, disorders, injuries and other related health conditions in a comprehensive way.
+
+Added to OCRSEV by Dharani K Balasubramanian</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_20209">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_22202">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4645">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4646">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4647">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4654">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4658">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4670">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.bioontology.org/ontology/HOM-ICD9CM/MM_CLASS_4675">
+        <rdfs:comment xml:lang="en">This ICD 9 diagnosis code is imported from the International Classification of Diseases, version 9 - Clinical Modification ontology in Bioportal at https://bioportal.bioontology.org/ontologies/ICD9CM.</rdfs:comment>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000500">
         <rdfs:comment xml:lang="en">A socio-economic data which represents the state of an individual or a population being engaged or not engaged in an activity or service that either provides wages or salary.
 
@@ -4428,6 +4509,69 @@ OT=Other</rdfs:comment>
         <rdfs:comment xml:lang="en">A socio-economic data which represents the level or range of revenues or receipts acquired by an individual or a population from business enterprise, labor, or invested capital.
 
 [Dharani K Balasubramanian]</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#A00_B99">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#B20">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#B21">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#B95_B97">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#B97">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#C00_D48">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#C51_C58">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#C53_0">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#C53_1">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#C53_8">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#C53_9">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#D00_D09">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#R00_R99">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#R83_R89">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#R87_6">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.
+
+Definition: A clinical finding represented as an ICD10 code that is about a specimen derived from a portion of vagina and other female genital organs.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Source: https://www.icd10data.com/ICD10CM/Codes/R00-R99/R83-R89/R87-/R87.61</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#R87_8">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.
+
+Definition: A clinical finding represented as an ICD10 code that is about a specimen derived from a portion of cervix uteri, vagina and vulva.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Source: https://www.icd10data.com/ICD10CM/Codes/R00-R99/R83-R89/R87-/R87.89</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Z00_Z13">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Z00_Z99">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#Z01">
+        <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
     </rdf:Description>
     
 

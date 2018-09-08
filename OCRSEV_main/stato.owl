@@ -943,7 +943,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000005"/>
         <obo:IAO_0000111 xml:lang="en">specifically dependent continuant</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">the color of a tomato</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">the disposition of fish to decay</obo:IAO_0000112>
@@ -986,7 +985,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000005"/>
         <obo:IAO_0000111 xml:lang="en">generically dependent continuant</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">a certain PDF file that exists in different and in several hard drives</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A continuant  that is dependent on one or other independent continuant  bearers. For every instance of A requires some instance of (an independent continuant  type) B but which instance of B serves can change from time to time.</obo:IAO_0000115>
@@ -2668,22 +2666,26 @@ https://www.stat.fi/isi99/proceedings/arkisto/varasto/roya0578.pdf</obo:IAO_0000
         <obo:STATO_0000032 xml:lang="en"></obo:STATO_0000032>
         <rdfs:label xml:lang="en">goodness of fit testing objective</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000228 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000228">
-        <rdfs:label xml:lang="en">ordinal variable</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115 xml:lang="en">ordinal variable is a categorical variable where  the discrete possible values are ordered or  correspond to an implicit ranking</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltan</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orlaith Burke</obo:IAO_0000117>
-        <obo:STATO_0000032 xml:lang="en"></obo:STATO_0000032>
-        <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltan</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Philippe Rocca-Serra</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">http://udel.edu/~mcdonald/statvartypes.html</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">ordinal variable is a categorical variable where  the discrete possible values are ordered or  correspond to an implicit ranking</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">ranked variable</obo:IAO_0000118>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000119 xml:lang="en">http://udel.edu/~mcdonald/statvartypes.html</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
+        <obo:STATO_0000032 xml:lang="en"></obo:STATO_0000032>
+        <rdfs:label xml:lang="en">ordinal variable</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/STATO_0000251 -->
 
@@ -2742,7 +2744,6 @@ https://www.stat.fi/isi99/proceedings/arkisto/varasto/roya0578.pdf</obo:IAO_0000
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000258">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">a variable is a data item which can assume any of a set of values, either as determined by an agent or as randomly occuring through observation.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alejandra Gonzalez-Beltran</obo:IAO_0000117>
@@ -3177,12 +3178,12 @@ last accessed: 2015-11-03</obo:IAO_0000119>
         <dc:contributor>Nolan Nichols (http://orcid.org/0000-0003-1099-3328)</dc:contributor>
         <dc:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://creativecommons.org/licenses/by/3.0/</dc:license>
         <dc:contributor>Thomas Nichols (http://orcid.org/0000-0002-4516-5103)</dc:contributor>
-        <dc:subject xml:lang="en">Statistical Method, Design of Experiment, Plots, Statistical Model</dc:subject>
         <dc:contributor>Chris Mungall (http://orcid.org/0000-0002-6601-2165)</dc:contributor>
+        <dc:subject xml:lang="en">Statistical Method, Design of Experiment, Plots, Statistical Model</dc:subject>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.3</owl:versionInfo>
         <doap:homepage>http://stato-ontology.org/</doap:homepage>
-        <dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">This Ontology is distributed under a Creative Commons Attribution License </dc:rights>
         <doap:bug-database>https://github.com/ISA-tools/stato/issues</doap:bug-database>
+        <dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">This Ontology is distributed under a Creative Commons Attribution License </dc:rights>
         <dc:contributor>Camille Maumet (http://orcid.org/0000-0002-6290-553X)</dc:contributor>
         <dc:creator>Alejandra Gonzalez-Beltran (http://orcid.org/0000-0003-3499-8262)</dc:creator>
         <dc:title>STATO: the statistical methods ontology</dc:title>

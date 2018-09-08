@@ -13,7 +13,6 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/classes-only.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno/bfo2/pno.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl"/>
         <owl:versionInfo>2015-09-28</owl:versionInfo>
@@ -134,6 +133,12 @@
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
     
 
 
@@ -3682,6 +3687,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:label xml:lang="en">gender identification process</rdfs:label>
     </owl:Class>
     
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000142 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000142">
@@ -3703,6 +3710,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">sexual orientation identification process</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
 
