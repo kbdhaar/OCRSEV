@@ -2857,10 +2857,11 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000583">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000581"/>
-        <obo:IAO_0000115 xml:lang="en">A BRFSS area smoker status variable which represents the prevalence of the use or the lack of use of human-consumable Nicotiana tabacum by the participants of BRFSS quesionnaire, specifically including those participants who have smoked atleast 100 cigarettes in their lifetime and currently either smoke everyday or somedays.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A BRFSS area smoker status variable which represents the prevalence of the use or the lack of use of human-consumable Nicotiana tabacum by the participants of BRFSS quesionnaire, specifically including those participants who have smoked atleast 100 cigarettes in their lifetime and currently either smoke everyday or somedays where &quot;currently&quot; is defined by when the event of smoking happened.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">BRFSS (https://www.cdc.gov/brfss) calculated variables document</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">The database is 2015 brfss. So, &quot;currently&quot; here would mean “as of Dec 2015”.  This can change depending on how recent the database is.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The database is 2016 brfss. So, &quot;currently&quot; here would mean “as of Dec 2016”.  This can change depending on how recent the database is.
+This is defined by when the event &quot;tobacco use behavior&quot; happened.</rdfs:comment>
         <rdfs:label xml:lang="en">BRFSS area current smoker status variable</rdfs:label>
     </owl:Class>
     
@@ -2870,10 +2871,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000584">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000581"/>
-        <obo:IAO_0000115 xml:lang="en">A BRFSS area smoker status variable which represents the prevalence of the use or the lack of use of human-consumable Nicotiana tabacum by the participants of BRFSS quesionnaire, specifically including those participants who have smoked atleast 100 cigarettes in their lifetime but currently do not smoke and those participants who have not smoked atleast 100 cigarettes in their lifetime.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A BRFSS area smoker status variable which represents the prevalence of the use or the lack of use of human-consumable Nicotiana tabacum by the participants of BRFSS quesionnaire, specifically including those participants who have smoked atleast 100 cigarettes in their lifetime but currently do not smoke and those participants who have not smoked atleast 100 cigarettes in their lifetime where &quot;past 30 days&quot; depends on when the question asking process happened.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">BRFSS (https://www.cdc.gov/brfss) calculated variables document</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">The database is 2015 brfss. So, &quot;currently&quot; here would mean “as of Dec 2015”.  This can change depending on how recent the database is.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The database is 2016 brfss. So, &quot;currently&quot; here would mean “as of Dec 2016”.  This can change depending on how recent the database is.</rdfs:comment>
         <rdfs:label xml:lang="en">BRFSS area current non-smoker status variable</rdfs:label>
     </owl:Class>
     
@@ -2968,9 +2969,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000601">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000600"/>
-        <obo:IAO_0000117 xml:lang="en">A BRFSS area alcohol prevalence variable which only represents the intake of human-consumable alcohol by the participants of BRFSS quesionnaire, specifically including those participants living in a specific geographical region, who reported drinking atleast one alcoholic beverage in the past 30 days.</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A BRFSS area alcohol prevalence variable which only represents the intake of human-consumable alcohol by the participants of BRFSS quesionnaire, specifically including those participants living in a specific geographical region, who reported drinking atleast one alcoholic beverage in the past 30 days where &quot;past 30 days&quot; is defined by the event of drinking that happened 30 days before the question asking process.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">BRFSS (https://www.cdc.gov/brfss) calculated variables document</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">The database is 2016 brfss. So, &quot;current&quot; here would mean “as of Dec 2016”.  This can change depending on how recent the database is.</rdfs:comment>
         <rdfs:label xml:lang="en">BRFSS area current drinker status variable</rdfs:label>
     </owl:Class>
     
@@ -2980,9 +2982,10 @@ Term IRI:  http://purl.obolibrary.org/obo/VT_0001259</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000602">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OCRSEV/OCRSEV_00000600"/>
-        <obo:IAO_0000115 xml:lang="en">A BRFSS area alcohol prevalence variable which only represents the intake of human-consumable alcohol by the participants of BRFSS quesionnaire, specifically including those participants living in a specific geographical region, who reported drinking no alcoholic beverages in the past 30 days.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A BRFSS area alcohol prevalence variable which only represents the intake of human-consumable alcohol by the participants of BRFSS quesionnaire, specifically including those participants living in a specific geographical region, who reported drinking no alcoholic beverages in the past 30 days where &quot;past 30 days&quot; depends on when the question asking process happened.</obo:IAO_0000115>
         <obo:IAO_0000117>Dharani K Balasubramanian</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">BRFSS (https://www.cdc.gov/brfss) calculated variables document</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">The database is 2016 brfss. So, &quot;current&quot; here would mean “as of Dec 2016”.  This can change depending on how recent the database is.</rdfs:comment>
         <rdfs:label xml:lang="en">BRFSS area current non-drinker status variable</rdfs:label>
     </owl:Class>
     
@@ -4553,10 +4556,10 @@ Added to OCRSEV by Dharani K Balasubramanian</rdfs:comment>
         <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#R87_6">
+        <rdfs:comment xml:lang="en">Source: https://www.icd10data.com/ICD10CM/Codes/R00-R99/R83-R89/R87-/R87.61</rdfs:comment>
         <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.
 
 Definition: A clinical finding represented as an ICD10 code that is about a specimen derived from a portion of vagina and other female genital organs.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Source: https://www.icd10data.com/ICD10CM/Codes/R00-R99/R83-R89/R87-/R87.61</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.owl-ontologies.com/unnamed.owl#R87_8">
         <rdfs:comment xml:lang="en">This ICD10 diagnosis code is imported from ICD-10 Ontology in Data and Knowledge Management Unit at https://dkm.fbk.eu/technologies/icd-10-ontology.
